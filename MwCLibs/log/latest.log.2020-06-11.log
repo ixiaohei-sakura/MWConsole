@@ -1,0 +1,620 @@
+[2020-06-11 05:40:45,635][MwebServer.logger(MwebServer.py:52)][17097][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 05:40:45,636][MwebServer.logger(MwebServer.py:52)][17097][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 05:40:45,636][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Checking DataBase
+[2020-06-11 05:40:45,636][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Server Running at PID:17101
+[2020-06-11 05:40:45,637][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Monitor Started
+[2020-06-11 05:40:45,652][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Django is nothing wrong
+[2020-06-11 05:40:46,047][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 05:40:48,135][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Monitor Stoped
+[2020-06-11 05:40:48,135][MwebServer.logger(MwebServer.py:52)][17097][INFO]:StartProcess
+[2020-06-11 05:40:48,136][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Server Running at PID:17112
+[2020-06-11 05:40:48,136][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Monitor Started
+[2020-06-11 05:40:48,151][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Django is nothing wrong
+[2020-06-11 05:40:48,343][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Django is nothing wrong
+[2020-06-11 05:40:48,510][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Performing system checks...
+[2020-06-11 05:40:48,545][MwebServer.logger(MwebServer.py:52)][17097][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 05:40:48,559][MwebServer.logger(MwebServer.py:52)][17097][INFO]:June 10, 2020 - 21:40:48Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 05:46:51,012][MwebServer.logger(MwebServer.py:52)][17097][INFO]:当前客户端在线数量: 1
+[2020-06-11 05:46:51,012][MwebServer.logger(MwebServer.py:52)][17097][INFO]:统计客户端id: dict_keys(['Creative'])
+[2020-06-11 05:46:51,012][MwebServer.logger(MwebServer.py:52)][17097][INFO]:向客户端返回了pong
+[2020-06-11 05:46:53,088][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Stoped server, return code: -6
+[2020-06-11 05:46:53,089][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Monitor Stoped
+[2020-06-11 05:46:53,089][MwebServer.logger(MwebServer.py:52)][17097][INFO]:StartProcess
+[2020-06-11 05:46:53,089][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Server Running at PID:18570
+[2020-06-11 05:46:53,090][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Monitor Started
+[2020-06-11 05:46:53,105][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Django is nothing wrong
+[2020-06-11 05:46:53,285][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Django is nothing wrong
+[2020-06-11 05:46:53,458][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Performing system checks...
+[2020-06-11 05:46:53,501][MwebServer.logger(MwebServer.py:52)][17097][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 05:46:53,513][MwebServer.logger(MwebServer.py:52)][17097][INFO]:June 10, 2020 - 21:46:53Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 05:47:02,168][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Stoped server, return code: -6
+[2020-06-11 05:47:02,168][MwebServer.logger(MwebServer.py:52)][17097][INFO]:Monitor Stoped
+[2020-06-11 05:47:02,168][MwebServer.logger(MwebServer.py:52)][17097][INFO]:SocketServer会自动停止
+[2020-06-11 05:50:00,187][MwebServer.logger(MwebServer.py:52)][19482][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 05:50:00,187][MwebServer.logger(MwebServer.py:52)][19482][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 05:50:00,187][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Checking DataBase
+[2020-06-11 05:50:00,188][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Server Running at PID:19486
+[2020-06-11 05:50:00,189][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Monitor Started
+[2020-06-11 05:50:00,210][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Django is nothing wrong
+[2020-06-11 05:50:00,410][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 05:50:02,618][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Monitor Stoped
+[2020-06-11 05:50:02,618][MwebServer.logger(MwebServer.py:52)][19482][INFO]:StartProcess
+[2020-06-11 05:50:02,619][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Server Running at PID:19505
+[2020-06-11 05:50:02,619][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Monitor Started
+[2020-06-11 05:50:02,635][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Django is nothing wrong
+[2020-06-11 05:50:02,812][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Django is nothing wrong
+[2020-06-11 05:50:02,974][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Performing system checks...
+[2020-06-11 05:50:03,013][MwebServer.logger(MwebServer.py:52)][19482][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 05:50:03,027][MwebServer.logger(MwebServer.py:52)][19482][INFO]:June 10, 2020 - 21:50:03Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 05:50:08,032][MwebServer.logger(MwebServer.py:52)][19482][INFO]:当前客户端在线数量: 1
+[2020-06-11 05:50:08,032][MwebServer.logger(MwebServer.py:52)][19482][INFO]:统计客户端id: dict_keys(['Creative'])
+[2020-06-11 05:50:12,649][MwebServer.logger(MwebServer.py:52)][19482][INFO]:当前客户端在线数量: 0
+[2020-06-11 05:58:09,505][MwebServer.logger(MwebServer.py:52)][19482][INFO]:当前客户端在线数量: 1
+[2020-06-11 05:58:09,505][MwebServer.logger(MwebServer.py:52)][19482][INFO]:统计客户端id: dict_keys(['Creative'])
+[2020-06-11 05:58:16,786][MwebServer.logger(MwebServer.py:52)][19482][INFO]:STOPPING
+[2020-06-11 05:58:18,859][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Stoped server, return code: -6
+[2020-06-11 05:58:18,859][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Monitor Stoped
+[2020-06-11 05:58:18,859][MwebServer.logger(MwebServer.py:52)][19482][INFO]:Socket服务端会自动停止
+[2020-06-11 05:58:24,679][MwebServer.logger(MwebServer.py:52)][21623][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 05:58:24,680][MwebServer.logger(MwebServer.py:52)][21623][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 05:58:24,680][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Checking DataBase
+[2020-06-11 05:58:24,681][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Server Running at PID:21627
+[2020-06-11 05:58:24,681][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Monitor Started
+[2020-06-11 05:58:24,699][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Django is nothing wrong
+[2020-06-11 05:58:24,913][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 05:58:27,001][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Monitor Stoped
+[2020-06-11 05:58:27,002][MwebServer.logger(MwebServer.py:52)][21623][INFO]:StartProcess
+[2020-06-11 05:58:27,003][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Server Running at PID:21637
+[2020-06-11 05:58:27,003][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Monitor Started
+[2020-06-11 05:58:27,019][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Django is nothing wrong
+[2020-06-11 05:58:27,206][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Django is nothing wrong
+[2020-06-11 05:58:27,367][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Performing system checks...
+[2020-06-11 05:58:27,401][MwebServer.logger(MwebServer.py:52)][21623][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 05:58:27,417][MwebServer.logger(MwebServer.py:52)][21623][INFO]:June 10, 2020 - 21:58:27Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 05:58:51,491][MwebServer.logger(MwebServer.py:52)][21623][INFO]:当前客户端在线数量: 1
+[2020-06-11 05:58:51,491][MwebServer.logger(MwebServer.py:52)][21623][INFO]:统计客户端id: dict_keys(['Creative'])
+[2020-06-11 05:58:53,491][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:58:55,492][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:58:57,492][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:58:59,492][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:01,493][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:03,493][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:05,493][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:07,494][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:09,494][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:11,495][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:13,495][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:15,495][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:17,496][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:19,496][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:21,496][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:23,497][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:25,497][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:27,497][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:29,498][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:31,498][MwebServer.logger(MwebServer.py:52)][21623][INFO]:向客户端返回了pong
+[2020-06-11 05:59:33,181][MwebServer.logger(MwebServer.py:52)][21623][INFO]:当前客户端在线数量: 0
+[2020-06-11 05:59:36,475][MwebServer.logger(MwebServer.py:52)][21623][INFO]:STOPPING
+[2020-06-11 05:59:38,547][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Stoped server, return code: -6
+[2020-06-11 05:59:38,547][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Socket服务端会自动停止
+[2020-06-11 05:59:38,548][MwebServer.logger(MwebServer.py:52)][21623][INFO]:Monitor Stoped
+[2020-06-11 05:59:49,408][MwebServer.logger(MwebServer.py:52)][21985][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 05:59:49,409][MwebServer.logger(MwebServer.py:52)][21985][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 05:59:49,409][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Checking DataBase
+[2020-06-11 05:59:49,410][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Server Running at PID:21989
+[2020-06-11 05:59:49,410][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Monitor Started
+[2020-06-11 05:59:49,425][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Django is nothing wrong
+[2020-06-11 05:59:49,610][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 05:59:51,700][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Monitor Stoped
+[2020-06-11 05:59:51,700][MwebServer.logger(MwebServer.py:52)][21985][INFO]:StartProcess
+[2020-06-11 05:59:51,701][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Server Running at PID:21997
+[2020-06-11 05:59:51,701][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Monitor Started
+[2020-06-11 05:59:51,717][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Django is nothing wrong
+[2020-06-11 05:59:51,904][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Django is nothing wrong
+[2020-06-11 05:59:52,105][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Performing system checks...
+[2020-06-11 05:59:52,147][MwebServer.logger(MwebServer.py:52)][21985][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 05:59:52,159][MwebServer.logger(MwebServer.py:52)][21985][INFO]:June 10, 2020 - 21:59:52Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 05:59:53,985][MwebServer.logger(MwebServer.py:52)][21985][INFO]:当前客户端在线数量: 1
+[2020-06-11 05:59:53,986][MwebServer.logger(MwebServer.py:52)][21985][INFO]:统计客户端id: dict_keys(['Creative'])
+[2020-06-11 06:00:18,452][MwebServer.logger(MwebServer.py:52)][21985][INFO]:当前客户端在线数量: 0
+[2020-06-11 06:00:20,168][MwebServer.logger(MwebServer.py:52)][21985][INFO]:当前客户端在线数量: 1
+[2020-06-11 06:00:20,169][MwebServer.logger(MwebServer.py:52)][21985][INFO]:统计客户端id: dict_keys(['Creative'])
+[2020-06-11 06:01:40,950][MwebServer.logger(MwebServer.py:52)][21985][INFO]:STOPPING
+[2020-06-11 06:01:43,023][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Stoped server, return code: -6
+[2020-06-11 06:01:43,023][MwebServer.logger(MwebServer.py:52)][21985][INFO]:Socket服务端会自动停止
+[2020-06-11 06:02:44,790][MwebServer.logger(MwebServer.py:52)][22860][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 06:02:44,791][MwebServer.logger(MwebServer.py:52)][22860][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 06:02:44,791][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Checking DataBase
+[2020-06-11 06:02:44,791][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Server Running at PID:22864
+[2020-06-11 06:02:44,792][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Monitor Started
+[2020-06-11 06:02:44,809][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Django is nothing wrong
+[2020-06-11 06:02:45,014][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessions
+[2020-06-11 06:02:45,019][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Running migrations:  No migrations to apply.
+[2020-06-11 06:02:47,107][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Monitor Stoped
+[2020-06-11 06:02:47,107][MwebServer.logger(MwebServer.py:52)][22860][INFO]:StartProcess
+[2020-06-11 06:02:47,108][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Server Running at PID:22875
+[2020-06-11 06:02:47,108][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Monitor Started
+[2020-06-11 06:02:47,123][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Django is nothing wrong
+[2020-06-11 06:02:47,305][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Django is nothing wrong
+[2020-06-11 06:02:47,470][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Performing system checks...
+[2020-06-11 06:02:47,497][MwebServer.logger(MwebServer.py:52)][22860][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 06:02:47,544][MwebServer.logger(MwebServer.py:52)][22860][INFO]:June 10, 2020 - 22:02:47Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 06:02:49,133][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 1
+[2020-06-11 06:02:49,133][MwebServer.logger(MwebServer.py:52)][22860][INFO]:统计客户端id:
+[2020-06-11 06:02:49,133][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Creative
+[2020-06-11 06:03:08,561][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 0
+[2020-06-11 06:03:34,430][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 1
+[2020-06-11 06:03:34,430][MwebServer.logger(MwebServer.py:52)][22860][INFO]:统计客户端id:
+[2020-06-11 06:03:34,430][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Creative
+[2020-06-11 06:03:51,388][MwebServer.logger(MwebServer.py:52)][22860][INFO]:1
+[2020-06-11 06:03:56,831][MwebServer.logger(MwebServer.py:52)][22860][INFO]:1
+[2020-06-11 06:04:31,086][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 0
+[2020-06-11 06:04:33,753][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 1
+[2020-06-11 06:04:33,753][MwebServer.logger(MwebServer.py:52)][22860][INFO]:统计客户端id:
+[2020-06-11 06:04:33,753][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Creative
+[2020-06-11 06:04:46,616][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 0
+[2020-06-11 06:04:47,816][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 1
+[2020-06-11 06:04:47,816][MwebServer.logger(MwebServer.py:52)][22860][INFO]:统计客户端id:
+[2020-06-11 06:04:47,816][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Creative
+[2020-06-11 06:04:51,160][MwebServer.logger(MwebServer.py:52)][22860][INFO]:1
+[2020-06-11 06:05:06,382][MwebServer.logger(MwebServer.py:52)][22860][INFO]:21
+[2020-06-11 06:05:10,714][MwebServer.logger(MwebServer.py:52)][22860][INFO]:hello
+[2020-06-11 06:05:13,717][MwebServer.logger(MwebServer.py:52)][22860][INFO]:awa
+[2020-06-11 06:05:16,890][MwebServer.logger(MwebServer.py:52)][22860][INFO]:favsrazvgsdv
+[2020-06-11 06:05:26,467][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 0
+[2020-06-11 06:06:44,241][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 1
+[2020-06-11 06:06:44,241][MwebServer.logger(MwebServer.py:52)][22860][INFO]:统计客户端id:
+[2020-06-11 06:06:44,241][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Creative
+[2020-06-11 06:06:51,619][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 0
+[2020-06-11 06:06:52,997][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 1
+[2020-06-11 06:06:52,997][MwebServer.logger(MwebServer.py:52)][22860][INFO]:统计客户端id:
+[2020-06-11 06:06:52,997][MwebServer.logger(MwebServer.py:52)][22860][INFO]:Creative
+[2020-06-11 06:06:59,775][MwebServer.logger(MwebServer.py:52)][22860][INFO]:11111
+[2020-06-11 06:07:05,557][MwebServer.logger(MwebServer.py:52)][22860][INFO]:111111111111111111111111
+[2020-06-11 06:07:14,073][MwebServer.logger(MwebServer.py:52)][22860][INFO]:\000
+[2020-06-11 06:07:16,739][MwebServer.logger(MwebServer.py:52)][22860][INFO]:1
+[2020-06-11 06:07:17,755][MwebServer.logger(MwebServer.py:52)][22860][INFO]:当前客户端在线数量: 0
+[2020-06-11 21:48:00,257][MwebServer.logger(MwebServer.py:52)][529][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 21:48:00,257][MwebServer.logger(MwebServer.py:52)][529][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 21:48:00,257][MwebServer.logger(MwebServer.py:52)][529][INFO]:Checking DataBase
+[2020-06-11 21:48:00,258][MwebServer.logger(MwebServer.py:52)][529][INFO]:Server Running at PID:533
+[2020-06-11 21:48:00,258][MwebServer.logger(MwebServer.py:52)][529][INFO]:Monitor Started
+[2020-06-11 21:48:00,274][MwebServer.logger(MwebServer.py:52)][529][INFO]:Django is nothing wrong
+[2020-06-11 21:48:00,640][MwebServer.logger(MwebServer.py:52)][529][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 21:48:02,745][MwebServer.logger(MwebServer.py:52)][529][INFO]:Monitor Stoped
+[2020-06-11 21:48:02,745][MwebServer.logger(MwebServer.py:52)][529][INFO]:StartProcess
+[2020-06-11 21:48:02,746][MwebServer.logger(MwebServer.py:52)][529][INFO]:Server Running at PID:545
+[2020-06-11 21:48:02,746][MwebServer.logger(MwebServer.py:52)][529][INFO]:Monitor Started
+[2020-06-11 21:48:02,762][MwebServer.logger(MwebServer.py:52)][529][INFO]:Django is nothing wrong
+[2020-06-11 21:48:02,942][MwebServer.logger(MwebServer.py:52)][529][INFO]:Django is nothing wrong
+[2020-06-11 21:48:03,103][MwebServer.logger(MwebServer.py:52)][529][INFO]:Performing system checks...
+[2020-06-11 21:48:03,149][MwebServer.logger(MwebServer.py:52)][529][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 21:48:03,168][MwebServer.logger(MwebServer.py:52)][529][INFO]:June 11, 2020 - 13:48:03Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 21:48:05,241][MwebServer.logger(MwebServer.py:52)][529][INFO]:Monitor Stoped
+[2020-06-11 21:48:45,032][MwebServer.logger(MwebServer.py:52)][773][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 21:48:45,033][MwebServer.logger(MwebServer.py:52)][773][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 21:48:45,033][MwebServer.logger(MwebServer.py:52)][773][INFO]:Checking DataBase
+[2020-06-11 21:48:45,034][MwebServer.logger(MwebServer.py:52)][773][INFO]:Server Running at PID:777
+[2020-06-11 21:48:45,034][MwebServer.logger(MwebServer.py:52)][773][INFO]:Monitor Started
+[2020-06-11 21:48:45,050][MwebServer.logger(MwebServer.py:52)][773][INFO]:Django is nothing wrong
+[2020-06-11 21:48:45,252][MwebServer.logger(MwebServer.py:52)][773][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 21:48:47,342][MwebServer.logger(MwebServer.py:52)][773][INFO]:Monitor Stoped
+[2020-06-11 21:48:47,342][MwebServer.logger(MwebServer.py:52)][773][INFO]:StartProcess
+[2020-06-11 21:48:47,343][MwebServer.logger(MwebServer.py:52)][773][INFO]:Server Running at PID:787
+[2020-06-11 21:48:47,344][MwebServer.logger(MwebServer.py:52)][773][INFO]:Monitor Started
+[2020-06-11 21:48:47,359][MwebServer.logger(MwebServer.py:52)][773][INFO]:Django is nothing wrong
+[2020-06-11 21:48:47,596][MwebServer.logger(MwebServer.py:52)][773][INFO]:Django is nothing wrong
+[2020-06-11 21:48:47,758][MwebServer.logger(MwebServer.py:52)][773][INFO]:Performing system checks...
+[2020-06-11 21:48:47,793][MwebServer.logger(MwebServer.py:52)][773][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 21:48:47,808][MwebServer.logger(MwebServer.py:52)][773][INFO]:June 11, 2020 - 13:48:47Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 21:48:49,883][MwebServer.logger(MwebServer.py:52)][773][INFO]:Monitor Stoped
+[2020-06-11 21:49:11,998][MwebServer.logger(MwebServer.py:52)][880][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 21:49:11,999][MwebServer.logger(MwebServer.py:52)][880][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 21:49:11,999][MwebServer.logger(MwebServer.py:52)][880][INFO]:Checking DataBase
+[2020-06-11 21:49:11,999][MwebServer.logger(MwebServer.py:52)][880][INFO]:Server Running at PID:884
+[2020-06-11 21:49:12,000][MwebServer.logger(MwebServer.py:52)][880][INFO]:Monitor Started
+[2020-06-11 21:49:12,020][MwebServer.logger(MwebServer.py:52)][880][INFO]:Django is nothing wrong
+[2020-06-11 21:49:12,218][MwebServer.logger(MwebServer.py:52)][880][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 21:49:14,328][MwebServer.logger(MwebServer.py:52)][880][INFO]:Monitor Stoped
+[2020-06-11 21:49:14,329][MwebServer.logger(MwebServer.py:52)][880][INFO]:StartProcess
+[2020-06-11 21:49:14,330][MwebServer.logger(MwebServer.py:52)][880][INFO]:Server Running at PID:927
+[2020-06-11 21:49:14,330][MwebServer.logger(MwebServer.py:52)][880][INFO]:Monitor Started
+[2020-06-11 21:49:14,345][MwebServer.logger(MwebServer.py:52)][880][INFO]:Django is nothing wrong
+[2020-06-11 21:49:14,569][MwebServer.logger(MwebServer.py:52)][880][INFO]:Django is nothing wrong
+[2020-06-11 21:49:14,739][MwebServer.logger(MwebServer.py:52)][880][INFO]:Performing system checks...
+[2020-06-11 21:49:14,765][MwebServer.logger(MwebServer.py:52)][880][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 21:49:14,797][MwebServer.logger(MwebServer.py:52)][880][INFO]:June 11, 2020 - 13:49:14Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 21:49:16,872][MwebServer.logger(MwebServer.py:52)][880][INFO]:Monitor Stoped
+[2020-06-11 21:49:34,139][MwebServer.logger(MwebServer.py:52)][991][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 21:49:34,140][MwebServer.logger(MwebServer.py:52)][991][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 21:49:34,140][MwebServer.logger(MwebServer.py:52)][991][INFO]:Checking DataBase
+[2020-06-11 21:49:34,141][MwebServer.logger(MwebServer.py:52)][991][INFO]:Server Running at PID:995
+[2020-06-11 21:49:34,141][MwebServer.logger(MwebServer.py:52)][991][INFO]:Monitor Started
+[2020-06-11 21:49:34,157][MwebServer.logger(MwebServer.py:52)][991][INFO]:Django is nothing wrong
+[2020-06-11 21:49:34,375][MwebServer.logger(MwebServer.py:52)][991][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 21:49:36,464][MwebServer.logger(MwebServer.py:52)][991][INFO]:Monitor Stoped
+[2020-06-11 21:49:36,464][MwebServer.logger(MwebServer.py:52)][991][INFO]:StartProcess
+[2020-06-11 21:49:36,465][MwebServer.logger(MwebServer.py:52)][991][INFO]:Server Running at PID:1041
+[2020-06-11 21:49:36,465][MwebServer.logger(MwebServer.py:52)][991][INFO]:Monitor Started
+[2020-06-11 21:49:36,480][MwebServer.logger(MwebServer.py:52)][991][INFO]:Django is nothing wrong
+[2020-06-11 21:49:36,677][MwebServer.logger(MwebServer.py:52)][991][INFO]:Django is nothing wrong
+[2020-06-11 21:49:36,851][MwebServer.logger(MwebServer.py:52)][991][INFO]:Performing system checks...
+[2020-06-11 21:49:36,917][MwebServer.logger(MwebServer.py:52)][991][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 21:49:36,931][MwebServer.logger(MwebServer.py:52)][991][INFO]:June 11, 2020 - 13:49:36Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 21:49:39,004][MwebServer.logger(MwebServer.py:52)][991][INFO]:Monitor Stoped
+[2020-06-11 21:49:59,396][MwebServer.logger(MwebServer.py:52)][1142][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 21:49:59,396][MwebServer.logger(MwebServer.py:52)][1142][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 21:49:59,397][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Checking DataBase
+[2020-06-11 21:49:59,397][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Server Running at PID:1146
+[2020-06-11 21:49:59,398][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Monitor Started
+[2020-06-11 21:49:59,413][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Django is nothing wrong
+[2020-06-11 21:49:59,609][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 21:50:01,698][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Monitor Stoped
+[2020-06-11 21:50:01,699][MwebServer.logger(MwebServer.py:52)][1142][INFO]:StartProcess
+[2020-06-11 21:50:01,700][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Server Running at PID:1154
+[2020-06-11 21:50:01,700][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Monitor Started
+[2020-06-11 21:50:01,715][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Django is nothing wrong
+[2020-06-11 21:50:01,901][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Django is nothing wrong
+[2020-06-11 21:50:02,095][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Performing system checks...
+[2020-06-11 21:50:02,138][MwebServer.logger(MwebServer.py:52)][1142][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 21:50:02,157][MwebServer.logger(MwebServer.py:52)][1142][INFO]:June 11, 2020 - 13:50:02Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 21:50:04,232][MwebServer.logger(MwebServer.py:52)][1142][INFO]:Monitor Stoped
+[2020-06-11 21:53:32,937][MwebServer.logger(MwebServer.py:52)][2138][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 21:53:32,938][MwebServer.logger(MwebServer.py:52)][2138][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 21:53:32,938][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Checking DataBase
+[2020-06-11 21:53:32,939][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Server Running at PID:2142
+[2020-06-11 21:53:32,939][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Monitor Started
+[2020-06-11 21:53:32,960][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Django is nothing wrong
+[2020-06-11 21:53:33,285][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 21:53:35,385][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Monitor Stoped
+[2020-06-11 21:53:35,385][MwebServer.logger(MwebServer.py:52)][2138][INFO]:StartProcess
+[2020-06-11 21:53:35,386][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Server Running at PID:2189
+[2020-06-11 21:53:35,386][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Monitor Started
+[2020-06-11 21:53:35,402][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Django is nothing wrong
+[2020-06-11 21:53:35,693][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Django is nothing wrong
+[2020-06-11 21:53:36,080][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Performing system checks...
+[2020-06-11 21:53:36,162][MwebServer.logger(MwebServer.py:52)][2138][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 21:53:36,272][MwebServer.logger(MwebServer.py:52)][2138][INFO]:June 11, 2020 - 13:53:36Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 21:54:48,664][MwebServer.logger(MwebServer.py:52)][2138][INFO]:当前客户端在线数量: 1
+[2020-06-11 21:54:48,664][MwebServer.logger(MwebServer.py:52)][2138][INFO]:统计客户端id:
+[2020-06-11 21:54:48,664][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Creative
+[2020-06-11 21:54:52,605][MwebServer.logger(MwebServer.py:52)][2138][INFO]:1
+[2020-06-11 21:54:55,620][MwebServer.logger(MwebServer.py:52)][2138][INFO]:1
+[2020-06-11 21:55:04,035][MwebServer.logger(MwebServer.py:52)][2138][INFO]:1111
+[2020-06-11 21:55:05,869][MwebServer.logger(MwebServer.py:52)][2138][INFO]:11111111111111
+[2020-06-11 21:55:09,547][MwebServer.logger(MwebServer.py:52)][2138][INFO]:1111111111111111111111111111111111111111111111111
+[2020-06-11 21:55:11,719][MwebServer.logger(MwebServer.py:52)][2138][INFO]:hello
+[2020-06-11 21:55:19,112][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Client_Creatiuve
+[2020-06-11 21:55:35,325][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Client_Creative hello!
+[2020-06-11 21:55:55,305][MwebServer.logger(MwebServer.py:52)][2138][INFO]:当前客户端在线数量: 0
+[2020-06-11 21:58:29,507][MwebServer.logger(MwebServer.py:52)][2138][INFO]:Monitor Stoped
+[2020-06-11 21:59:15,312][MwebServer.logger(MwebServer.py:52)][3620][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 21:59:15,312][MwebServer.logger(MwebServer.py:52)][3620][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 21:59:15,312][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Checking DataBase
+[2020-06-11 21:59:15,313][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Server Running at PID:3624
+[2020-06-11 21:59:15,314][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Monitor Started
+[2020-06-11 21:59:15,336][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Django is nothing wrong
+[2020-06-11 21:59:15,598][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 21:59:17,702][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Monitor Stoped
+[2020-06-11 21:59:17,702][MwebServer.logger(MwebServer.py:52)][3620][INFO]:StartProcess
+[2020-06-11 21:59:17,704][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Server Running at PID:3636
+[2020-06-11 21:59:17,704][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Monitor Started
+[2020-06-11 21:59:17,720][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Django is nothing wrong
+[2020-06-11 21:59:17,906][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Django is nothing wrong
+[2020-06-11 21:59:18,065][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Performing system checks...
+[2020-06-11 21:59:18,100][MwebServer.logger(MwebServer.py:52)][3620][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 21:59:18,115][MwebServer.logger(MwebServer.py:52)][3620][INFO]:June 11, 2020 - 13:59:18Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 21:59:23,606][MwebServer.logger(MwebServer.py:52)][3620][INFO]:TYPE::: <class 'django.core.handlers.wsgi.WSGIRequest'>
+[2020-06-11 21:59:23,606][MwebServer.logger(MwebServer.py:52)][3620][INFO]:当前客户端在线数量: 1
+[2020-06-11 21:59:23,607][MwebServer.logger(MwebServer.py:52)][3620][INFO]:统计客户端id:
+[2020-06-11 21:59:23,607][MwebServer.logger(MwebServer.py:52)][3620][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m13:59:23[0m][0m
+[2020-06-11 21:59:23,607][MwebServer.logger(MwebServer.py:52)][3620][INFO]:当前客户端在线数量: 0
+[2020-06-11 21:59:41,143][MwebServer.logger(MwebServer.py:52)][3620][INFO]:Monitor Stoped
+[2020-06-11 22:01:01,445][MwebServer.logger(MwebServer.py:52)][4116][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:01:01,445][MwebServer.logger(MwebServer.py:52)][4116][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:01:01,445][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Checking DataBase
+[2020-06-11 22:01:01,446][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Server Running at PID:4120
+[2020-06-11 22:01:01,446][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Monitor Started
+[2020-06-11 22:01:01,466][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Django is nothing wrong
+[2020-06-11 22:01:01,735][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:01:03,825][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Monitor Stoped
+[2020-06-11 22:01:03,825][MwebServer.logger(MwebServer.py:52)][4116][INFO]:StartProcess
+[2020-06-11 22:01:03,826][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Server Running at PID:4129
+[2020-06-11 22:01:03,826][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Monitor Started
+[2020-06-11 22:01:03,841][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Django is nothing wrong
+[2020-06-11 22:01:04,023][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Django is nothing wrong
+[2020-06-11 22:01:04,200][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Performing system checks...
+[2020-06-11 22:01:04,248][MwebServer.logger(MwebServer.py:52)][4116][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:01:04,264][MwebServer.logger(MwebServer.py:52)][4116][INFO]:June 11, 2020 - 14:01:04Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:01:07,163][MwebServer.logger(MwebServer.py:52)][4116][INFO]:http://10.168.0.213:8000/login/
+[2020-06-11 22:01:07,163][MwebServer.logger(MwebServer.py:52)][4116][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:01:07,163][MwebServer.logger(MwebServer.py:52)][4116][INFO]:统计客户端id:
+[2020-06-11 22:01:07,164][MwebServer.logger(MwebServer.py:52)][4116][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:01:07[0m][0m
+[2020-06-11 22:01:07,164][MwebServer.logger(MwebServer.py:52)][4116][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:01:24,664][MwebServer.logger(MwebServer.py:52)][4116][INFO]:http://10.168.0.213:8000/login/
+[2020-06-11 22:01:24,665][MwebServer.logger(MwebServer.py:52)][4116][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:01:24,665][MwebServer.logger(MwebServer.py:52)][4116][INFO]:统计客户端id:
+[2020-06-11 22:01:24,665][MwebServer.logger(MwebServer.py:52)][4116][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:01:24[0m][0m
+[2020-06-11 22:01:24,665][MwebServer.logger(MwebServer.py:52)][4116][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:01:57,958][MwebServer.logger(MwebServer.py:52)][4116][INFO]:Monitor Stoped
+[2020-06-11 22:02:48,321][MwebServer.logger(MwebServer.py:52)][4584][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:02:48,322][MwebServer.logger(MwebServer.py:52)][4584][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:02:48,322][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Checking DataBase
+[2020-06-11 22:02:48,323][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Server Running at PID:4588
+[2020-06-11 22:02:48,323][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Monitor Started
+[2020-06-11 22:02:48,338][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Django is nothing wrong
+[2020-06-11 22:02:48,537][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:02:50,626][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Monitor Stoped
+[2020-06-11 22:02:50,626][MwebServer.logger(MwebServer.py:52)][4584][INFO]:StartProcess
+[2020-06-11 22:02:50,627][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Server Running at PID:4599
+[2020-06-11 22:02:50,627][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Monitor Started
+[2020-06-11 22:02:50,643][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Django is nothing wrong
+[2020-06-11 22:02:50,825][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Django is nothing wrong
+[2020-06-11 22:02:51,078][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Performing system checks...
+[2020-06-11 22:02:51,116][MwebServer.logger(MwebServer.py:52)][4584][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:02:51,140][MwebServer.logger(MwebServer.py:52)][4584][INFO]:June 11, 2020 - 14:02:51Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:02:53,746][MwebServer.logger(MwebServer.py:52)][4584][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:02:53,746][MwebServer.logger(MwebServer.py:52)][4584][INFO]:统计客户端id:
+[2020-06-11 22:02:53,747][MwebServer.logger(MwebServer.py:52)][4584][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:02:53[0m][0m
+[2020-06-11 22:02:53,747][MwebServer.logger(MwebServer.py:52)][4584][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:04:43,891][MwebServer.logger(MwebServer.py:52)][4584][INFO]:Monitor Stoped
+[2020-06-11 22:43:57,449][MwebServer.logger(MwebServer.py:52)][14672][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:43:57,449][MwebServer.logger(MwebServer.py:52)][14672][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:43:57,449][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Checking DataBase
+[2020-06-11 22:43:57,450][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Server Running at PID:14676
+[2020-06-11 22:43:57,451][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Monitor Started
+[2020-06-11 22:43:57,466][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Django is nothing wrong
+[2020-06-11 22:43:57,676][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:43:59,767][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Monitor Stoped
+[2020-06-11 22:43:59,768][MwebServer.logger(MwebServer.py:52)][14672][INFO]:StartProcess
+[2020-06-11 22:43:59,769][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Server Running at PID:14690
+[2020-06-11 22:43:59,769][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Monitor Started
+[2020-06-11 22:43:59,784][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Django is nothing wrong
+[2020-06-11 22:43:59,988][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Django is nothing wrong
+[2020-06-11 22:44:00,160][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Performing system checks...
+[2020-06-11 22:44:00,195][MwebServer.logger(MwebServer.py:52)][14672][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:44:00,217][MwebServer.logger(MwebServer.py:52)][14672][INFO]:June 11, 2020 - 14:44:00Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:44:01,925][MwebServer.logger(MwebServer.py:52)][14672][INFO]:login
+[2020-06-11 22:44:34,848][MwebServer.logger(MwebServer.py:52)][14672][INFO]:Monitor Stoped
+[2020-06-11 22:44:49,367][MwebServer.logger(MwebServer.py:52)][14911][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:44:49,368][MwebServer.logger(MwebServer.py:52)][14911][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:44:49,368][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Checking DataBase
+[2020-06-11 22:44:49,369][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Server Running at PID:14915
+[2020-06-11 22:44:49,369][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Monitor Started
+[2020-06-11 22:44:49,392][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Django is nothing wrong
+[2020-06-11 22:44:49,850][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:44:51,973][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Monitor Stoped
+[2020-06-11 22:44:51,973][MwebServer.logger(MwebServer.py:52)][14911][INFO]:StartProcess
+[2020-06-11 22:44:51,974][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Server Running at PID:14923
+[2020-06-11 22:44:51,974][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Monitor Started
+[2020-06-11 22:44:51,989][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Django is nothing wrong
+[2020-06-11 22:44:52,221][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Django is nothing wrong
+[2020-06-11 22:44:52,383][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Performing system checks...
+[2020-06-11 22:44:52,419][MwebServer.logger(MwebServer.py:52)][14911][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:44:52,432][MwebServer.logger(MwebServer.py:52)][14911][INFO]:June 11, 2020 - 14:44:52Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:44:58,960][MwebServer.logger(MwebServer.py:52)][14911][INFO]:login
+[2020-06-11 22:46:21,561][MwebServer.logger(MwebServer.py:52)][14911][INFO]:Monitor Stoped
+[2020-06-11 22:46:23,317][MwebServer.logger(MwebServer.py:52)][15297][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:46:23,317][MwebServer.logger(MwebServer.py:52)][15297][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:46:23,318][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Checking DataBase
+[2020-06-11 22:46:23,318][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Server Running at PID:15301
+[2020-06-11 22:46:23,319][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Monitor Started
+[2020-06-11 22:46:23,334][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Django is nothing wrong
+[2020-06-11 22:46:23,587][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:46:25,677][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Monitor Stoped
+[2020-06-11 22:46:25,677][MwebServer.logger(MwebServer.py:52)][15297][INFO]:StartProcess
+[2020-06-11 22:46:25,678][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Server Running at PID:15343
+[2020-06-11 22:46:25,678][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Monitor Started
+[2020-06-11 22:46:25,694][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Django is nothing wrong
+[2020-06-11 22:46:25,915][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Django is nothing wrong
+[2020-06-11 22:46:26,077][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Performing system checks...
+[2020-06-11 22:46:26,103][MwebServer.logger(MwebServer.py:52)][15297][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:46:26,116][MwebServer.logger(MwebServer.py:52)][15297][INFO]:June 11, 2020 - 14:46:26Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:46:30,246][MwebServer.logger(MwebServer.py:52)][15297][INFO]:login
+[2020-06-11 22:46:48,214][MwebServer.logger(MwebServer.py:52)][15297][INFO]:Monitor Stoped
+[2020-06-11 22:47:02,589][MwebServer.logger(MwebServer.py:52)][15484][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:47:02,590][MwebServer.logger(MwebServer.py:52)][15484][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:47:02,590][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Checking DataBase
+[2020-06-11 22:47:02,591][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Server Running at PID:15488
+[2020-06-11 22:47:02,591][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Monitor Started
+[2020-06-11 22:47:02,607][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Django is nothing wrong
+[2020-06-11 22:47:02,984][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:47:05,074][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Monitor Stoped
+[2020-06-11 22:47:05,074][MwebServer.logger(MwebServer.py:52)][15484][INFO]:StartProcess
+[2020-06-11 22:47:05,075][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Server Running at PID:15534
+[2020-06-11 22:47:05,076][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Monitor Started
+[2020-06-11 22:47:05,091][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Django is nothing wrong
+[2020-06-11 22:47:05,273][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Django is nothing wrong
+[2020-06-11 22:47:05,462][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Performing system checks...
+[2020-06-11 22:47:05,502][MwebServer.logger(MwebServer.py:52)][15484][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:47:05,550][MwebServer.logger(MwebServer.py:52)][15484][INFO]:June 11, 2020 - 14:47:05Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:47:07,060][MwebServer.logger(MwebServer.py:52)][15484][INFO]:login
+[2020-06-11 22:47:18,039][MwebServer.logger(MwebServer.py:52)][15484][INFO]:login
+[2020-06-11 22:47:23,241][MwebServer.logger(MwebServer.py:52)][15484][INFO]:login
+[2020-06-11 22:47:35,002][MwebServer.logger(MwebServer.py:52)][15484][INFO]:Monitor Stoped
+[2020-06-11 22:53:00,165][MwebServer.logger(MwebServer.py:52)][16966][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:53:00,165][MwebServer.logger(MwebServer.py:52)][16966][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:53:00,165][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Checking DataBase
+[2020-06-11 22:53:00,166][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Server Running at PID:16970
+[2020-06-11 22:53:00,166][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Monitor Started
+[2020-06-11 22:53:00,182][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Django is nothing wrong
+[2020-06-11 22:53:00,411][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:53:02,502][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Monitor Stoped
+[2020-06-11 22:53:02,502][MwebServer.logger(MwebServer.py:52)][16966][INFO]:StartProcess
+[2020-06-11 22:53:02,503][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Server Running at PID:16978
+[2020-06-11 22:53:02,503][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Monitor Started
+[2020-06-11 22:53:02,520][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Django is nothing wrong
+[2020-06-11 22:53:02,953][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Django is nothing wrong
+[2020-06-11 22:53:03,220][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Performing system checks...
+[2020-06-11 22:53:03,264][MwebServer.logger(MwebServer.py:52)][16966][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:53:03,288][MwebServer.logger(MwebServer.py:52)][16966][INFO]:June 11, 2020 - 14:53:03Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:53:08,047][MwebServer.logger(MwebServer.py:52)][16966][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:53:08,048][MwebServer.logger(MwebServer.py:52)][16966][INFO]:统计客户端id:
+[2020-06-11 22:53:08,048][MwebServer.logger(MwebServer.py:52)][16966][INFO]:[1;32m[HTTP1.1/GET b'{"type": "msg", "ping": "", "cmd": "", "cmd_return": "", "msg": "Hello, world. You\'re at the polls index.14:53:08/login/"}':200 STATUS OK] [1;33mtime:[0m [[1;32m14:53:08[0m][0m
+[2020-06-11 22:53:08,048][MwebServer.logger(MwebServer.py:52)][16966][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:53:57,755][MwebServer.logger(MwebServer.py:52)][16966][INFO]:Monitor Stoped
+[2020-06-11 22:55:21,366][MwebServer.logger(MwebServer.py:52)][17572][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:55:21,367][MwebServer.logger(MwebServer.py:52)][17572][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:55:21,367][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Checking DataBase
+[2020-06-11 22:55:21,368][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Server Running at PID:17576
+[2020-06-11 22:55:21,368][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Monitor Started
+[2020-06-11 22:55:21,383][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Django is nothing wrong
+[2020-06-11 22:55:21,577][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:55:23,666][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Monitor Stoped
+[2020-06-11 22:55:23,666][MwebServer.logger(MwebServer.py:52)][17572][INFO]:StartProcess
+[2020-06-11 22:55:23,667][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Server Running at PID:17584
+[2020-06-11 22:55:23,667][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Monitor Started
+[2020-06-11 22:55:23,682][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Django is nothing wrong
+[2020-06-11 22:55:23,859][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Django is nothing wrong
+[2020-06-11 22:55:24,023][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Performing system checks...
+[2020-06-11 22:55:24,062][MwebServer.logger(MwebServer.py:52)][17572][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:55:24,087][MwebServer.logger(MwebServer.py:52)][17572][INFO]:June 11, 2020 - 14:55:24Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:55:31,453][MwebServer.logger(MwebServer.py:52)][17572][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:55:31,453][MwebServer.logger(MwebServer.py:52)][17572][INFO]:统计客户端id:
+[2020-06-11 22:55:31,454][MwebServer.logger(MwebServer.py:52)][17572][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:55:31[0m][0m
+[2020-06-11 22:55:31,454][MwebServer.logger(MwebServer.py:52)][17572][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:55:42,896][MwebServer.logger(MwebServer.py:52)][17572][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:55:42,896][MwebServer.logger(MwebServer.py:52)][17572][INFO]:统计客户端id:
+[2020-06-11 22:55:42,896][MwebServer.logger(MwebServer.py:52)][17572][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:55:42[0m][0m
+[2020-06-11 22:55:42,896][MwebServer.logger(MwebServer.py:52)][17572][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:55:46,364][MwebServer.logger(MwebServer.py:52)][17572][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:55:46,364][MwebServer.logger(MwebServer.py:52)][17572][INFO]:统计客户端id:
+[2020-06-11 22:55:46,364][MwebServer.logger(MwebServer.py:52)][17572][INFO]:[1;32m[HTTP1.1/GET admin:200 STATUS OK] [1;33mtime:[0m [[1;32m14:55:46[0m][0m
+[2020-06-11 22:55:46,364][MwebServer.logger(MwebServer.py:52)][17572][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:56:21,919][MwebServer.logger(MwebServer.py:52)][17572][INFO]:Monitor Stoped
+[2020-06-11 22:56:36,571][MwebServer.logger(MwebServer.py:52)][17918][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:56:36,571][MwebServer.logger(MwebServer.py:52)][17918][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:56:36,571][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Checking DataBase
+[2020-06-11 22:56:36,572][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Server Running at PID:17922
+[2020-06-11 22:56:36,573][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Monitor Started
+[2020-06-11 22:56:36,588][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Django is nothing wrong
+[2020-06-11 22:56:36,986][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:56:39,079][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Monitor Stoped
+[2020-06-11 22:56:39,079][MwebServer.logger(MwebServer.py:52)][17918][INFO]:StartProcess
+[2020-06-11 22:56:39,080][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Server Running at PID:17932
+[2020-06-11 22:56:39,080][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Monitor Started
+[2020-06-11 22:56:39,095][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Django is nothing wrong
+[2020-06-11 22:56:39,304][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Django is nothing wrong
+[2020-06-11 22:56:39,517][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Performing system checks...
+[2020-06-11 22:56:39,541][MwebServer.logger(MwebServer.py:52)][17918][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:56:39,564][MwebServer.logger(MwebServer.py:52)][17918][INFO]:June 11, 2020 - 14:56:39Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:57:28,008][MwebServer.logger(MwebServer.py:52)][17918][INFO]:Monitor Stoped
+[2020-06-11 22:57:51,598][MwebServer.logger(MwebServer.py:52)][18228][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:57:51,599][MwebServer.logger(MwebServer.py:52)][18228][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:57:51,599][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Checking DataBase
+[2020-06-11 22:57:51,600][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Server Running at PID:18232
+[2020-06-11 22:57:51,600][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Monitor Started
+[2020-06-11 22:57:51,616][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Django is nothing wrong
+[2020-06-11 22:57:51,797][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:57:53,887][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Monitor Stoped
+[2020-06-11 22:57:53,887][MwebServer.logger(MwebServer.py:52)][18228][INFO]:StartProcess
+[2020-06-11 22:57:53,888][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Server Running at PID:18240
+[2020-06-11 22:57:53,888][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Monitor Started
+[2020-06-11 22:57:53,903][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Django is nothing wrong
+[2020-06-11 22:57:54,087][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Django is nothing wrong
+[2020-06-11 22:57:54,249][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Performing system checks...
+[2020-06-11 22:57:54,285][MwebServer.logger(MwebServer.py:52)][18228][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:57:54,298][MwebServer.logger(MwebServer.py:52)][18228][INFO]:June 11, 2020 - 14:57:54Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:58:17,292][MwebServer.logger(MwebServer.py:52)][18228][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:58:17,293][MwebServer.logger(MwebServer.py:52)][18228][INFO]:统计客户端id:
+[2020-06-11 22:58:17,293][MwebServer.logger(MwebServer.py:52)][18228][INFO]:django_info{"type": "django_info", "ping": "", "cmd": "", "cmd_return": "", "django_info": "[HTTP1.1/GET login:200 STATUS OK] \u001b[1;33mtime:\u001b[0m [\u001b[1;32m14:58:17\u001b[0m]"}
+[2020-06-11 22:58:27,594][MwebServer.logger(MwebServer.py:52)][18228][INFO]:当前客户端在线数量: 2
+[2020-06-11 22:58:27,594][MwebServer.logger(MwebServer.py:52)][18228][INFO]:统计客户端id:
+[2020-06-11 22:58:27,594][MwebServer.logger(MwebServer.py:52)][18228][INFO]:django_info{"type": "django_info", "ping": "", "cmd": "", "cmd_return": "", "django_info": "[HTTP1.1/GET login:200 STATUS OK] \u001b[1;33mtime:\u001b[0m [\u001b[1;32m14:58:17\u001b[0m]"}
+[2020-06-11 22:58:27,595][MwebServer.logger(MwebServer.py:52)][18228][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:58:27[0m][0m
+[2020-06-11 22:58:27,595][MwebServer.logger(MwebServer.py:52)][18228][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:58:28,449][MwebServer.logger(MwebServer.py:52)][18228][INFO]:当前客户端在线数量: 2
+[2020-06-11 22:58:28,449][MwebServer.logger(MwebServer.py:52)][18228][INFO]:统计客户端id:
+[2020-06-11 22:58:28,449][MwebServer.logger(MwebServer.py:52)][18228][INFO]:django_info{"type": "django_info", "ping": "", "cmd": "", "cmd_return": "", "django_info": "[HTTP1.1/GET login:200 STATUS OK] \u001b[1;33mtime:\u001b[0m [\u001b[1;32m14:58:17\u001b[0m]"}
+[2020-06-11 22:58:28,450][MwebServer.logger(MwebServer.py:52)][18228][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:58:28[0m][0m
+[2020-06-11 22:58:28,450][MwebServer.logger(MwebServer.py:52)][18228][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:58:36,168][MwebServer.logger(MwebServer.py:52)][18228][INFO]:当前客户端在线数量: 2
+[2020-06-11 22:58:36,168][MwebServer.logger(MwebServer.py:52)][18228][INFO]:统计客户端id:
+[2020-06-11 22:58:36,168][MwebServer.logger(MwebServer.py:52)][18228][INFO]:django_info{"type": "django_info", "ping": "", "cmd": "", "cmd_return": "", "django_info": "[HTTP1.1/GET login:200 STATUS OK] \u001b[1;33mtime:\u001b[0m [\u001b[1;32m14:58:17\u001b[0m]"}
+[2020-06-11 22:58:36,168][MwebServer.logger(MwebServer.py:52)][18228][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:58:36[0m][0m
+[2020-06-11 22:58:36,168][MwebServer.logger(MwebServer.py:52)][18228][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:58:48,871][MwebServer.logger(MwebServer.py:52)][18228][INFO]:当前客户端在线数量: 2
+[2020-06-11 22:58:48,871][MwebServer.logger(MwebServer.py:52)][18228][INFO]:统计客户端id:
+[2020-06-11 22:58:48,871][MwebServer.logger(MwebServer.py:52)][18228][INFO]:django_info{"type": "django_info", "ping": "", "cmd": "", "cmd_return": "", "django_info": "[HTTP1.1/GET login:200 STATUS OK] \u001b[1;33mtime:\u001b[0m [\u001b[1;32m14:58:17\u001b[0m]"}
+[2020-06-11 22:58:48,871][MwebServer.logger(MwebServer.py:52)][18228][INFO]:django_info{"type": "django_info", "ping": "", "cmd": "", "cmd_return": "", "django_info": "[HTTP1.1/GET login:200 STATUS OK] \u001b[1;33mtime:\u001b[0m [\u001b[1;32m14:58:48\u001b[0m]"}
+[2020-06-11 22:59:08,101][MwebServer.logger(MwebServer.py:52)][18228][INFO]:Monitor Stoped
+[2020-06-11 22:59:11,822][MwebServer.logger(MwebServer.py:52)][18578][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 22:59:11,823][MwebServer.logger(MwebServer.py:52)][18578][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 22:59:11,823][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Checking DataBase
+[2020-06-11 22:59:11,824][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Server Running at PID:18582
+[2020-06-11 22:59:11,824][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Monitor Started
+[2020-06-11 22:59:11,840][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Django is nothing wrong
+[2020-06-11 22:59:12,072][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 22:59:14,161][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Monitor Stoped
+[2020-06-11 22:59:14,162][MwebServer.logger(MwebServer.py:52)][18578][INFO]:StartProcess
+[2020-06-11 22:59:14,163][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Server Running at PID:18590
+[2020-06-11 22:59:14,163][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Monitor Started
+[2020-06-11 22:59:14,178][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Django is nothing wrong
+[2020-06-11 22:59:14,371][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Django is nothing wrong
+[2020-06-11 22:59:14,546][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Performing system checks...
+[2020-06-11 22:59:14,584][MwebServer.logger(MwebServer.py:52)][18578][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 22:59:14,603][MwebServer.logger(MwebServer.py:52)][18578][INFO]:June 11, 2020 - 14:59:14Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 22:59:16,500][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:59:16,500][MwebServer.logger(MwebServer.py:52)][18578][INFO]:统计客户端id:
+[2020-06-11 22:59:16,500][MwebServer.logger(MwebServer.py:52)][18578][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:59:16[0m][0m
+[2020-06-11 22:59:16,500][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:59:25,478][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:59:25,478][MwebServer.logger(MwebServer.py:52)][18578][INFO]:统计客户端id:
+[2020-06-11 22:59:25,478][MwebServer.logger(MwebServer.py:52)][18578][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:59:25[0m][0m
+[2020-06-11 22:59:25,478][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:59:25,608][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:59:25,608][MwebServer.logger(MwebServer.py:52)][18578][INFO]:统计客户端id:
+[2020-06-11 22:59:25,608][MwebServer.logger(MwebServer.py:52)][18578][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:59:25[0m][0m
+[2020-06-11 22:59:25,608][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:59:25,781][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:59:25,781][MwebServer.logger(MwebServer.py:52)][18578][INFO]:统计客户端id:
+[2020-06-11 22:59:25,782][MwebServer.logger(MwebServer.py:52)][18578][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:59:25[0m][0m
+[2020-06-11 22:59:25,782][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:59:25,925][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:59:25,925][MwebServer.logger(MwebServer.py:52)][18578][INFO]:统计客户端id:
+[2020-06-11 22:59:25,925][MwebServer.logger(MwebServer.py:52)][18578][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:59:25[0m][0m
+[2020-06-11 22:59:25,925][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:59:26,087][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:59:26,087][MwebServer.logger(MwebServer.py:52)][18578][INFO]:统计客户端id:
+[2020-06-11 22:59:26,087][MwebServer.logger(MwebServer.py:52)][18578][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:59:26[0m][0m
+[2020-06-11 22:59:26,088][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:59:26,240][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:59:26,240][MwebServer.logger(MwebServer.py:52)][18578][INFO]:统计客户端id:
+[2020-06-11 22:59:26,240][MwebServer.logger(MwebServer.py:52)][18578][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:59:26[0m][0m
+[2020-06-11 22:59:26,240][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:59:26,396][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:59:26,396][MwebServer.logger(MwebServer.py:52)][18578][INFO]:统计客户端id:
+[2020-06-11 22:59:26,396][MwebServer.logger(MwebServer.py:52)][18578][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:59:26[0m][0m
+[2020-06-11 22:59:26,396][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 0
+[2020-06-11 22:59:58,913][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 1
+[2020-06-11 22:59:58,913][MwebServer.logger(MwebServer.py:52)][18578][INFO]:统计客户端id:
+[2020-06-11 22:59:58,913][MwebServer.logger(MwebServer.py:52)][18578][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m14:59:58[0m][0m
+[2020-06-11 22:59:58,913][MwebServer.logger(MwebServer.py:52)][18578][INFO]:当前客户端在线数量: 0
+[2020-06-11 23:00:03,300][MwebServer.logger(MwebServer.py:52)][18578][INFO]:STOPPING
+[2020-06-11 23:00:05,372][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Stoped server, return code: -6
+[2020-06-11 23:00:05,372][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Monitor Stoped
+[2020-06-11 23:00:05,372][MwebServer.logger(MwebServer.py:52)][18578][INFO]:Socket服务端会自动停止
+[2020-06-11 23:00:10,123][MwebServer.logger(MwebServer.py:52)][18876][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-11 23:00:10,123][MwebServer.logger(MwebServer.py:52)][18876][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-11 23:00:10,124][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Checking DataBase
+[2020-06-11 23:00:10,124][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Server Running at PID:18880
+[2020-06-11 23:00:10,125][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Monitor Started
+[2020-06-11 23:00:10,140][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Django is nothing wrong
+[2020-06-11 23:00:10,323][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-06-11 23:00:12,413][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Monitor Stoped
+[2020-06-11 23:00:12,413][MwebServer.logger(MwebServer.py:52)][18876][INFO]:StartProcess
+[2020-06-11 23:00:12,414][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Server Running at PID:18888
+[2020-06-11 23:00:12,414][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Monitor Started
+[2020-06-11 23:00:12,430][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Django is nothing wrong
+[2020-06-11 23:00:12,618][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Django is nothing wrong
+[2020-06-11 23:00:12,786][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Performing system checks...
+[2020-06-11 23:00:12,842][MwebServer.logger(MwebServer.py:52)][18876][INFO]:System check identified no issues (0 silenced).
+[2020-06-11 23:00:12,858][MwebServer.logger(MwebServer.py:52)][18876][INFO]:June 11, 2020 - 15:00:12Django version 3.0.6, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-06-11 23:00:13,183][MwebServer.logger(MwebServer.py:52)][18876][INFO]:当前客户端在线数量: 1
+[2020-06-11 23:00:13,184][MwebServer.logger(MwebServer.py:52)][18876][INFO]:统计客户端id:
+[2020-06-11 23:00:13,184][MwebServer.logger(MwebServer.py:52)][18876][INFO]:[1;32m[HTTP1.1/GET login:200 STATUS OK] [1;33mtime:[0m [[1;32m15:00:13[0m][0m
+[2020-06-11 23:00:13,184][MwebServer.logger(MwebServer.py:52)][18876][INFO]:当前客户端在线数量: 0
+[2020-06-11 23:00:17,789][MwebServer.logger(MwebServer.py:52)][18876][INFO]:STOPPING
+[2020-06-11 23:00:19,862][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Stoped server, return code: -6
+[2020-06-11 23:00:19,862][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Monitor Stoped
+[2020-06-11 23:00:19,862][MwebServer.logger(MwebServer.py:52)][18876][INFO]:Socket服务端会自动停止

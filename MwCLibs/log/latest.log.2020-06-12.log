@@ -1,0 +1,4 @@
+[2020-06-13 08:19:33,855][MwebServer.logger(MwebServer.py:52)][25194][INFO]:STOPPING
+[2020-06-13 08:19:35,928][MwebServer.logger(MwebServer.py:52)][25194][INFO]:Stoped server, return code: -6
+[2020-06-13 08:19:35,928][MwebServer.logger(MwebServer.py:52)][25194][INFO]:Socket服务端会自动停止
+[2020-06-13 08:19:35,928][MwebServer.logger(MwebServer.py:52)][25194][INFO]:Monitor Stoped
