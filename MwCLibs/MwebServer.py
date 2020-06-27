@@ -10,6 +10,7 @@ import socket
 import json
 import asyncio
 import websockets
+import platform
 
 from logging.handlers import TimedRotatingFileHandler
 from subprocess import PIPE, Popen
@@ -158,7 +159,7 @@ class Socket_handle():
                 client.close()
             except:pass
         elif ID == 'django_info':
-            pass
+            client.sendall(self.enjson('cmd', 'id_ok'))
         else:
             for k in self.id_conn_pool.keys():
                 if ID == k:
@@ -175,7 +176,7 @@ class Socket_handle():
             client.sendall(self.enjson('cmd', 'id_ok'))
         ##
         self.num_online_client += 1
-        if ID != 'django_info':
+        if not ID.find('django_info'):
             self.Mlogger.logger(0, f"当前客户端在线数量: {self.num_online_client}", name='SocketServer')
             self.Mlogger.logger(0, '统计客户端id:', name='SocketServer')
             for value in self.id_conn_pool.keys():
@@ -207,13 +208,7 @@ class Socket_handle():
                 self.Mlogger.logger(0, tmp.msg, name='ClientSend')
             ##
             elif tmp.msgtype == 'django_info':
-                self.Mlogger.logger(0, '\033[1;32m'+tmp.msg+'\033[0m', name='HTTPINFO')
-                try:
-                    client.shutdown(2)
-                    client.close()
-                except:
-                    pass
-                return
+                self.Mlogger.logger(0, tmp.msg, name='HTTPINFO')
             ##
             elif tmp.msgtype == 'cmd':
                 if tmp.msg == 'stop':
@@ -389,7 +384,7 @@ class WSocket_handle():
 
 
 
-class Start_Interface():
+class Process_Control():
     def __init__(self: classmethod, Mlogger: classmethod, cmd: str, Monitor=True, ensoc=True, wsoc=None, soc=None) -> None:
         self.check_config()
         self.restart_wait_thread: threading.Thread
@@ -516,7 +511,7 @@ class Start_Interface():
 
 
 class ProcessMonitor():
-    def __init__(self: classmethod, Process_I: Start_Interface, info=True):
+    def __init__(self: classmethod, Process_I: Process_Control, info=True):
         self.process_i = Process_I
         self.thread: threading.Thread
         self.start_monitor(_info=info)
@@ -574,8 +569,14 @@ class Check_Update():
 
 
 class Server_Control():
+    class ConfigFileNotFound(Exception):
+        pass
+
     def __init__(self, argv):
         self.Mlogger = MwebLogger()
+        self.init_server()
+
+    def init_server(self: classmethod):
         self.update_checker = Check_Update(self)
         self.msg = """
    __  ____      _____/\\
@@ -613,16 +614,17 @@ class Server_Control():
             raise SystemExit
 
         self.Mlogger.logger(0, '检查必要的数据表', name='ServerCheck')
-        self.__process = Start_Interface(self.Mlogger, '{0} manage.py migrate'.format(self.read_config()['PYCMD']), self.read_config()['DEBUG'], ensoc=False)
+        self.__process = Process_Control(self.Mlogger, '{0} manage.py migrate'.format(self.read_config()['PYCMD']), self.read_config()['DEBUG'], ensoc=False)
         self.__process.join()
 
-        while True:
+    def start_all_server(self: classmethod):
+         while True:
             self.Mlogger.logger(0, 'StartProcess', name='ProcessServer')
-            self.process = Start_Interface(self.Mlogger, '{0} manage.py runserver 0:{1}'.format(self.read_config()['PYCMD'], self.read_config()['WEBPORT']), ensoc=True, wsoc=self.ws_handle, soc=self.soc_handle)
+            self.process = Process_Control(self.Mlogger, '{0} manage.py runserver 0:{1}'.format(self.read_config()['PYCMD'], self.read_config()['WEBPORT']), ensoc=True, wsoc=self.ws_handle, soc=self.soc_handle)
             self.process.join()
             if self.process.restart_flag == False:
                 break
-
+    
     def read_config(self: classmethod) -> dict:
         try:
             f = open('./configs/config.json', 'r')
@@ -632,9 +634,15 @@ class Server_Control():
             JSON = json.loads(f.read())
             return JSON
 
-
-process = Server_Control(sys.argv)
-
+try:
+    print("init server....")
+    process = Server_Control(sys.argv)
+except:
+    import traceback
+    traceback.print_exc()
+    input('Fail to initialize Server, press enter to exit.')
+else:
+    process.start_all_server()
 
 
 
