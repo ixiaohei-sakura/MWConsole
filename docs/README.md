@@ -1,6 +1,6 @@
 ![logo](https://raw.githubusercontent.com/ixiaohei-sakura/MWConsole/master/image.png)
-# MWConsole
-### 注意!还没写好!
+# MWConsole !真的是用python写的!
+### 仍在开发中，建议不要下载和使用(因为你也用不了
 ##### MCDReforged 网页管理控制台
 
 ## 程序介绍
