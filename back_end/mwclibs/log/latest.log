@@ -1,0 +1,25 @@
+[2020-06-30 17:34:56,222][MServer.logger(MServer.py:52)][5887][INFO]:   __  ____      _____/\
+[2020-06-30 17:34:56,223][MServer.logger(MServer.py:52)][5887][INFO]:  /  |/  / | /| / / ___/
+[2020-06-30 17:34:56,223][MServer.logger(MServer.py:52)][5887][INFO]: / /|_/ /| |/ |/ / /__  
+[2020-06-30 17:34:56,223][MServer.logger(MServer.py:52)][5887][INFO]:/ /  /_/ |__/|__/\___/
+[2020-06-30 17:34:56,223][MServer.logger(MServer.py:52)][5887][INFO]:\/
+[2020-06-30 17:34:56,223][MServer.logger(MServer.py:52)][5887][INFO]:==== MCDRWEBCONSOLE ====
+[2020-06-30 17:34:56,727][MServer.logger(MServer.py:52)][5887][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-06-30 17:34:56,728][MServer.logger(MServer.py:52)][5887][INFO]:上报BUG请联系 ixiaohei:
+[2020-06-30 17:34:56,728][MServer.logger(MServer.py:52)][5887][INFO]:QQ: 486118772
+[2020-06-30 17:34:56,728][MServer.logger(MServer.py:52)][5887][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-06-30 17:34:56,729][MServer.logger(MServer.py:52)][5887][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-06-30 17:34:56,729][MServer.logger(MServer.py:52)][5887][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-06-30 17:34:56,729][MServer.logger(MServer.py:52)][5887][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-06-30 17:34:59,731][MServer.logger(MServer.py:52)][5887][INFO]:WSocketServer已启动, 等待网页端上线
+[2020-06-30 17:34:59,734][MServer.logger(MServer.py:52)][5887][INFO]:SocketServer已启动, 等待客户端连接
+[2020-06-30 17:34:59,734][MServer.logger(MServer.py:52)][5887][INFO]:检查必要的数据表
+[2020-06-30 17:34:59,738][MServer.logger(MServer.py:52)][5887][INFO]:Server Running at PID:5888
+[2020-06-30 17:34:59,774][MServer.logger(MServer.py:52)][5887][INFO]:Django is nothing wrong
+[2020-06-30 17:35:00,129][MServer.logger(MServer.py:52)][5887][INFO]:StartProcess
+[2020-06-30 17:35:00,131][MServer.logger(MServer.py:52)][5887][INFO]:Server Running at PID:5889
+[2020-06-30 17:35:00,170][MServer.logger(MServer.py:52)][5887][INFO]:Django is nothing wrong
+[2020-06-30 17:35:00,588][MServer.logger(MServer.py:52)][5887][INFO]:Django is nothing wrong
+[2020-06-30 17:35:00,869][MServer.logger(MServer.py:52)][5887][INFO]:Performing system checks...
+[2020-06-30 17:35:31,963][MServer.logger(MServer.py:52)][5887][INFO]:STOPPING
+[2020-06-30 17:35:32,004][MServer.logger(MServer.py:52)][5887][INFO]:Stoped server, return code: 0

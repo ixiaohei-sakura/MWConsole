@@ -10,22 +10,20 @@ import socket
 import json
 import asyncio
 import websockets
-import platform
 
 from logging.handlers import TimedRotatingFileHandler
 from subprocess import PIPE, Popen
 
 
-
-class MwebLogger():
-    def __init__(self: classmethod, name='MWC'):
+class MLogger:
+    def __init__(self, name='MWC'):
         self.name = name
         self._logger = self._setup_log_file(name)
 
-    def _get_time(self: classmethod) -> str:
+    def _get_time(self) -> str:
         return time.strftime("%H:%M:%S", time.localtime())
 
-    def _setup_log_file(self: classmethod, name: str):
+    def _setup_log_file(self, name: str):
         logger = logging.getLogger(name)
         if os.path.isdir('./log') is not True:
             os.mkdir('./log')
@@ -34,20 +32,21 @@ class MwebLogger():
         file_handler = TimedRotatingFileHandler(filename=log_path, when="MIDNIGHT", interval=1, backupCount=30)
         file_handler.suffix = "%Y-%m-%d.log"
         file_handler.extMatch = re.compile(r"^\d{4}-\d{2}-\d{2}.log$")
-        file_handler.setFormatter(logging.Formatter("[%(asctime)s][%(module)s.%(funcName)s(%(filename)s:%(lineno)d)][%(process)d][%(levelname)s]:%(message)s"))
+        file_handler.setFormatter(logging.Formatter(
+            "[%(asctime)s][%(module)s.%(funcName)s(%(filename)s:%(lineno)d)][%(process)d][%(levelname)s]:%(message)s"))
         logger.addHandler(file_handler)
         return logger
 
-    def logger(self: classmethod, level: int, data: str, name='Main', end='\n'):
+    def logger(self, level: int, data: str, name='Main', end='\n'):
         now_time = self._get_time()
         if len(data) == 0:
             return
         for i in range(100):
             if i == 0: i = 1
-            data = data.replace('\n'*i, '')
+            data = data.replace('\n' * i, '')
         for i in range(100):
             if i == 0: i = 1
-            data = data.replace('\r'*i, '')
+            data = data.replace('\r' * i, '')
         if level == 0:
             print(f'[\033[1;32m{self.name}\033[0m][{now_time}][{name}/\033[1;32mINFO\033[0m]: {data}', end=end)
             self._logger.info(data)
@@ -65,9 +64,8 @@ class MwebLogger():
             self._logger.critical(data)
 
 
-
 class Socket_handle():
-    def __init__(self: classmethod, Mlogger: MwebLogger, process):
+    def __init__(self, Mlogger: MLogger, process):
         self.Mlogger = Mlogger
         self.process_ = process
         self.num_online_client: int
@@ -85,7 +83,7 @@ class Socket_handle():
         self.init()
         super().__init__()
 
-    def _load(self: classmethod):
+    def _load(self):
         self.num_online_client = 0
         self.addr = self._read_config()['SOCKET']['ADDR']
         self.port = self._read_config()['SOCKET']['PORT']
@@ -96,7 +94,7 @@ class Socket_handle():
         self.online_client = []
         self.s_thre_dict = {}
 
-    def _unload(self: classmethod):
+    def _unload(self):
         self.addr = None
         self.port = None
         self.FULLADDR = None
@@ -115,7 +113,7 @@ class Socket_handle():
         self.online_client: list
         self.s_thre_dict: dict
 
-    def init(self: classmethod):
+    def init(self):
         self.socket.bind(self.FULLADDR)
         self.socket.listen(5)
         thread = threading.Thread(target=self.accept_client)
@@ -123,41 +121,48 @@ class Socket_handle():
         thread.start()
         self.Mlogger.logger(0, "SocketServer已启动, 等待客户端连接", name='SocketServer')
 
-    def accept_client(self: classmethod):
+    def accept_client(self):
         while True:
-            try:client, _ = self.socket.accept()
-            except:return
+            try:
+                client, _ = self.socket.accept()
+            except:
+                return
             thread = threading.Thread(target=self.message_handle, args=[client])
             thread.setDaemon(True)
             thread.start()
             self.s_conn_pool.append(client)
             self.s_thre_pool.append(thread)
             self.s_thre_dict[client] = thread
-    
-    def message_handle(self: classmethod, client: socket.socket):
+
+    def message_handle(self, client: socket.socket):
         try:
             client.sendall(self.enjson('msg', 'conn_server'))
-        except:return
-        try:ID = self.dejson(client.recv(1024).decode('utf-8'))
+        except:
+            return
+        try:
+            ID = self.dejson(client.recv(1024).decode('utf-8'))
         except:
             try:
                 client.shutdown(2)
                 client.close()
                 return
-            except:return
+            except:
+                return
         if ID.msgtype != 'id':
             client.sendall(self.enjson('cmd', 'close_conn'))
             try:
                 client.shutdown(2)
                 client.close()
-            except:pass
+            except:
+                pass
         ID = ID.msg
         if len(ID) == 0:
             client.sendall(self.enjson('cmd', 'close_conn'))
             try:
                 client.shutdown(2)
                 client.close()
-            except:pass
+            except:
+                pass
         elif ID == 'django_info':
             client.sendall(self.enjson('cmd', 'id_ok'))
         else:
@@ -168,8 +173,10 @@ class Socket_handle():
                     del self.s_thre_dict[client]
                     self.num_online_client -= 1
                     self.Mlogger.logger(0, f"当前客户端在线数量: {self.num_online_client}", name='SocketServer')
-                    try:del self.id_conn_pool[ID]
-                    except:pass
+                    try:
+                        del self.id_conn_pool[ID]
+                    except:
+                        pass
                     self.s_thre_pool.remove(self.s_thre_dict[client])
                     return
             self.id_conn_pool[ID] = client
@@ -193,8 +200,10 @@ class Socket_handle():
                     self.num_online_client -= 1
                     if ID != 'django_info':
                         self.Mlogger.logger(0, f"当前客户端在线数量: {self.num_online_client}", name='SocketServer')
-                    try:del self.id_conn_pool[ID]
-                    except:pass
+                    try:
+                        del self.id_conn_pool[ID]
+                    except:
+                        pass
                     self.s_thre_pool.remove(self.s_thre_dict[client])
                 except:
                     return
@@ -212,23 +221,25 @@ class Socket_handle():
             ##
             elif tmp.msgtype == 'cmd':
                 if tmp.msg == 'stop':
-                    if self.process_.process.stop() == True:
+                    if self.process_.process.stop:
                         self.Mlogger.logger(0, 'SocketServer会自动停止', name='SocketServer')
                         value: socket.socket
                         try:
                             client.sendall(self.enjson('cmd_return', '成功停止服务器'))
-                        except:pass
+                        except:
+                            pass
                         for value in self.s_conn_pool:
                             try:
                                 value.shutdown(2)
                                 value.close()
-                            except:pass
+                            except:
+                                pass
                         self.process_.process.restart_flag = True
                     else:
                         client.sendall(self.enjson('cmd_return', '未能成功停止服务器'))
                 ##
                 elif tmp.msg == 'reload':
-                    if self.process_.process.restart() == True:
+                    if self.process_.process.restart == True:
                         client.sendall(self.enjson('cmd_return', '成功重载服务器'))
                     else:
                         client.sendall(self.enjson('cmd_return', '未能成功重载服务器'))
@@ -236,40 +247,41 @@ class Socket_handle():
                 else:
                     client.sendall(self.enjson('cmd_return', '参数错误'))
 
-    def send_to_all(self: classmethod, msg: str, _type='msg'):
+    def send_to_all(self, msg: str, _type='msg'):
         for value in self.s_conn_pool:
             value.sendall(self.enjson(_type, msg))
 
-    def dejson(self: classmethod, msg: str):
+    def dejson(self, msg: str):
         buff = json.loads(msg)
         try:
             if type(buff) == str:
                 raise TypeError
         except:
             buff = json.loads(buff)
+
         class _return:
             msgtype = buff['type']
             msg = buff[buff['type']]
             full = buff
+
         return _return
 
-    def enjson(self: classmethod, _type: str, value: str):
+    def enjson(self, _type: str, value: str):
         tmp = {'type': _type, _type: value}
         return bytes(json.dumps(tmp), encoding='UTF-8')
 
-    def _write_config(self: classmethod, adict: dict):
+    def _write_config(self, adict: dict):
         with open('./configs/config.json', 'w') as target:
             target.write(json.dumps(adict))
 
-    def _read_config(self: classmethod) -> dict:
+    def _read_config(self) -> dict:
         with open('./configs/config.json', 'r') as target:
             tmp = target.read()
         return json.loads(tmp)
 
 
-
 class WSocket_handle():
-    def __init__(self: classmethod, Mlogger: MwebLogger, process):
+    def __init__(self, Mlogger: MLogger, process):
         self.Mlogger = Mlogger
         self.process = process
         self.serve_async: asyncio.AbstractEventLoop
@@ -278,7 +290,7 @@ class WSocket_handle():
         self.client_count = 0
         self.start_ws()
 
-    async def login(self: classmethod, websocket: websockets.server.WebSocketServerProtocol, path: str):
+    async def login(self, websocket: websockets.server.WebSocketServerProtocol, path: str):
         await websocket.send(self.enjson('msg', 'conn'))
         while True:
             try:
@@ -288,7 +300,7 @@ class WSocket_handle():
             except:
                 return
 
-    async def test(self: classmethod, websocket: websockets.server.WebSocketServerProtocol, path: str):
+    async def test(self, websocket: websockets.server.WebSocketServerProtocol, path: str):
         await websocket.send(self.enjson('msg', 'conn'))
         while True:
             try:
@@ -298,7 +310,7 @@ class WSocket_handle():
             except:
                 return
 
-    async def main_logic(self: classmethod, websocket: websockets.server.WebSocketServerProtocol, path: str):
+    async def main_logic(self, websocket: websockets.server.WebSocketServerProtocol, path: str):
         self.client_list.append(websocket)
         self.client_count += 1
         self.Mlogger.logger(0, f'GET WEB CONN! online_count: {self.client_count}', name='WSocketServer')
@@ -317,14 +329,15 @@ class WSocket_handle():
         self.Mlogger.logger(0, f'OFFINE online_count: {self.client_count}', name='WSocketServer')
         self.client_list.remove(websocket)
 
-    def init(self: classmethod, e_loop: asyncio.AbstractEventLoop):
+    def init(self, e_loop: asyncio.AbstractEventLoop):
         asyncio.set_event_loop(e_loop)
-        self.start_server = websockets.serve(self.main_logic, self._read_config()['WSOCKET']['ADDR'], self._read_config()['WSOCKET']['PORT'])
+        self.start_server = websockets.serve(self.main_logic, self._read_config()['WSOCKET']['ADDR'],
+                                             self._read_config()['WSOCKET']['PORT'])
         self.serve_async = asyncio.get_event_loop()
         self.serve_async.run_until_complete(self.start_server)
         asyncio.get_event_loop().run_forever()
 
-    def start_ws(self: classmethod):
+    def start_ws(self):
         try:
             self.serve_async = asyncio.new_event_loop()
             self.serve_thread = threading.Thread(target=self.init, args=[self.serve_async])
@@ -334,58 +347,54 @@ class WSocket_handle():
         except:
             pass
 
-    def stop_ws(self: classmethod):
+    def stop_ws(self):
         for value in self.client_list:
             value.close()
         self.client_list = []
         try:
             self.start_server.ws_server.close()
-        except:pass
+        except:
+            pass
         try:
             self.serve_async.close()
-            self.serve_async.stop()
         except:
             pass
         try:
             self.serve_thread.join(0)
-        except:pass
+        except:
+            pass
 
-    def _write_config(self: classmethod, adict: dict):
+    def _write_config(self, adict: dict):
         with open('./configs/config.json', 'w') as target:
             target.write(json.dumps(adict))
 
-    def _read_config(self: classmethod) -> dict:
+    def _read_config(self) -> dict:
         with open('./configs/config.json', 'r') as target:
             tmp = target.read()
         return json.loads(tmp)
 
-    def dejson(self: classmethod, msg: str):
+    def dejson(self, msg: str):
         buff = json.loads(msg)
         try:
             if type(buff) == str:
                 raise TypeError
         except:
             buff = json.loads(buff)
+
         class _return:
             msgtype = buff['type']
             msg = buff[buff['type']]
+
         return _return
 
-    def enjson(self: classmethod, _type: str, value: str) -> str:
-        tmp = {
-            "type":"",
-            "ping":"",
-            "cmd":"",
-            "cmd_return":""
-        }
-        tmp['type'] = _type
-        tmp[_type] = value
+    def enjson(self, _type: str, value: str) -> str:
+        tmp = {"type": "", "ping": "", "cmd": "", "cmd_return": "", 'type': _type, _type: value}
         return json.dumps(tmp)
 
 
-
 class Process_Control():
-    def __init__(self: classmethod, Mlogger: classmethod, cmd: str, Monitor=True, ensoc=True, wsoc=None, soc=None) -> None:
+    def __init__(self, Mlogger: classmethod, cmd: str, Monitor=True, ensoc=True, wsoc=None,
+                 soc=None) -> None:
         self.check_config()
         self.restart_wait_thread: threading.Thread
         self.process: Popen
@@ -394,12 +403,12 @@ class Process_Control():
         self.ensoc = ensoc
         self.restart_flag = False
         self.start_popen(self.start_cmd)
-        if Monitor == True:
-            if cmd.find('migrate') == True:
+        if Monitor:
+            if cmd.find('migrate'):
                 self.Monitor = ProcessMonitor(self, False)
             else:
                 self.Monitor = ProcessMonitor(self)
-        if ensoc == True:
+        if ensoc:
             try:
                 self.ws_handle: WSocket_handle = wsoc
                 self.soc: Socket_handle = soc
@@ -408,60 +417,68 @@ class Process_Control():
                 self.stop()
                 raise SystemExit
 
-    def start_popen(self: classmethod, start_cmd: str) -> bool:
+    def start_popen(self, start_cmd: str) -> bool:
         try:
             self.process = Popen(start_cmd, stdout=PIPE, stdin=PIPE, stderr=PIPE, shell=True, bufsize=0)
             flags = fcntl.fcntl(self.process.stdout, fcntl.F_GETFL)
             fcntl.fcntl(self.process.stdout, fcntl.F_SETFL, flags | os.O_NONBLOCK)
-            self.Mlogger.logger(0, 'Server Running at PID:'+str(self.process.pid), name='ProcessInfo')
+            self.Mlogger.logger(0, 'Server Running at PID:' + str(self.process.pid), name='ProcessInfo')
             self.process_ = self.process
         except:
             return False
         else:
             return True
 
-    def check_config(self: classmethod):
+    def check_config(self):
         if os.path.isfile('./configs/config.json') is not True:
             with open('./configs/config.json', 'w') as f:
-                tmp = {"WEBPORT":8000,"PYCMD":"python3","ALLOWED_HOSTS": ["bs.s1.blackserver.cn", "10.168.0.213"],"LANGUAGE_CODE": "en-us","TIME_ZONE": "UTC", "STATIC_URL": "/static/","ROOT_URLCONF": "MwebConsole.urls","SECRET_KEY": "******=&=^c#s^lm*#fBYIXIA@HEIsxwIXiaO@HeiIS%fu&*kingcreatedthis&^#%^@&(*_&*$^$&proJECt#%^&#~!#^#%^@$=f@cx8kc@krrgw!-******","WSGI_APPLICATION": "MwebConsole.wsgi.application","USE_I18N": True,"USE_L10N": True,"USE_TZ": True,"DEBUG": True,"SOCKET": {"ADDR": "127.0.0.1","PORT": 3547},"WSOCKET":{"ADDR": "127.0.0.1","PORT": 3548}}
-                JSON = json.dumps(tmp, indent=3)
-                f.write(JSON)
+                tmp = {"WEBPORT": 8000, "PYCMD": "python3", "ALLOWED_HOSTS": ["bs.s1.blackserver.cn", "10.168.0.213"],
+                       "LANGUAGE_CODE": "en-us", "TIME_ZONE": "UTC", "STATIC_URL": "/static/",
+                       "ROOT_URLCONF": "mwc-httpserver.urls",
+                       "SECRET_KEY": "******=&=^c#s^lm*#fBYIXIA@HEIsxwIXiaO@HeiIS%fu&*kingcreatedthis&^#%^@&(*_&*$^$&proJECt#%^&#~!#^#%^@$=f@cx8kc@krrgw!-******",
+                       "WSGI_APPLICATION": "mwc-httpserver.wsgi.application", "USE_I18N": True, "USE_L10N": True,
+                       "USE_TZ": True, "DEBUG": True, "SOCKET": {"ADDR": "127.0.0.1", "PORT": 3547},
+                       "WSOCKET": {"ADDR": "127.0.0.1", "PORT": 3548}}
+                f.write(json.dumps(tmp, indent=3))
 
-    def stop(self: classmethod) -> int:
+    @property
+    def stop(self) -> int:
         if self.process.poll() is None:
             self.process.terminate()
-            while self.process.poll() == None:pass
+            while self.process.poll() is None: pass
             self.Mlogger.logger(0, f"Stoped server, return code: {self.process.poll()}", name='STATUS')
             return True
         else:
             return False
 
-    def start(self: classmethod) -> bool:
-        if self.process.poll() != None:
+    @property
+    def start(self) -> bool:
+        if self.process.poll() is not None:
             self.start_popen(self.start_cmd)
             self.restart_flag = False
             return True
 
-    def restart(self: classmethod) -> bool:
+    @property
+    def restart(self) -> bool:
         self.restart_flag = True
         tmp = self.stop()
-        while self.process.poll() == None:pass
+        while self.process.poll() is None: pass
         return tmp
-        
-    def _start_wait(self: classmethod):
+
+    def _start_wait(self):
         if self.restart_flag == True:
             self.Mlogger.logger(0, '等待启动...')
         while self.restart_flag == True:
             pass
         return
 
-    def start_wait(self: classmethod):
+    def start_wait(self):
         self.restart_wait_thread = threading.Thread(target=self._start_wait)
         self.restart_wait_thread.setDaemon(True)
         self.restart_wait_thread.start()
         self.restart_wait_thread.join()
 
-    def recv(self: classmethod) -> str:
+    def recv(self) -> str:
         r = ''
         pr = self.process.stdout
         while True:
@@ -472,12 +489,12 @@ class Process_Control():
             return str(r.rstrip(), encoding='UTF-8')
         return str(r.rstrip(), encoding='UTF-8')
 
-    def send(self: classmethod, data: str) -> None:
+    def send(self, data: str) -> None:
         self.process.stdin.write(bytes(data, encoding='UTF-8'))
         self.process.stdin.write(b'\r\n')
         self.process.stdin.flush()
 
-    def join(self: classmethod):
+    def join(self):
         try:
             try:
                 self.Monitor.thread.join()
@@ -509,14 +526,13 @@ class Process_Control():
                     self.Mlogger.logger(0, 'Socket服务端会自动停止')
 
 
-
-class ProcessMonitor():
-    def __init__(self: classmethod, Process_I: Process_Control, info=True):
+class ProcessMonitor:
+    def __init__(self, Process_I: Process_Control, info=True):
         self.process_i = Process_I
         self.thread: threading.Thread
         self.start_monitor(_info=info)
 
-    def monitor(self: classmethod, _info: bool):
+    def monitor(self, _info: bool):
         if _info == True:
             self.process_i.Mlogger.logger(0, 'Monitor Started', name='Monitor')
         while self.process_i.process.poll() is None:
@@ -525,35 +541,34 @@ class ProcessMonitor():
             self.process_i.Mlogger.logger(0, 'Monitor Stoped', name='Monitor')
         return
 
-    def alive(self: classmethod):
+    def alive(self):
         return self.thread.isAlive()
 
-    def start_monitor(self: classmethod, _info: bool):
+    def start_monitor(self, _info: bool):
         self.thread = threading.Thread(target=self.monitor, args=[_info])
         self.thread.setDaemon(True)
         self.thread.start()
 
-    def stop_monitor(self: classmethod):
+    def stop_monitor(self):
         self.thread.join(0)
 
-    def restart_monitor(self: classmethod):
+    def restart_monitor(self):
         self.stop_monitor()
         self.start_monitor(True)
 
 
-
-class Check_Update():
+class Check_Update:
     def __init__(self, SC):
         self.server_control = SC
         self.Mlogger = self.server_control.Mlogger
 
-    def check_version(self: classmethod):
+    def check_version(self):
         pass
 
-    def check_update(self: classmethod):
+    def check_update(self):
         pass
 
-    def restart_all(self: classmethod, ttw: int):
+    def restart_all(self, ttw: int):
         self.Mlogger.logger(0, '===BEGIN TO RESTART===')
         self.server_control.process.stop()
         self.server_control.soc_handle.send_to_all('server_restarting', 'server_status')
@@ -564,19 +579,18 @@ class Check_Update():
         self.Mlogger.logger(0, 'RESTARTING...')
 
         pythoncmd = sys.executable
-        os.execl(pythoncmd, pythoncmd, * sys.argv)
+        os.execl(pythoncmd, pythoncmd, *sys.argv)
 
 
-
-class Server_Control():
+class Server_Control:
     class ConfigFileNotFound(Exception):
         pass
 
     def __init__(self, argv):
-        self.Mlogger = MwebLogger()
+        self.Mlogger = MLogger()
         self.init_server()
 
-    def init_server(self: classmethod):
+    def init_server(self):
         self.update_checker = Check_Update(self)
         self.msg = """
    __  ____      _____/\\
@@ -594,7 +608,7 @@ class Server_Control():
         self.update_checker.check_update()
         self.Mlogger.logger(0, '上报BUG请联系 ixiaohei:')
         self.Mlogger.logger(0, 'QQ: 486118772')
-        self.Mlogger.logger(0, 'MwebConsole is OpenSource, find it here:')
+        self.Mlogger.logger(0, 'mwc-httpserver is OpenSource, find it here:')
         self.Mlogger.logger(0, 'GAYHUB: https://github.com/ixiaohei-sakura/')
         self.Mlogger.logger(0, 'G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole')
         self.Mlogger.logger(0, 'ServerStarted. Quit the server with CONTROL-C')
@@ -607,25 +621,26 @@ class Server_Control():
             raise SystemExit
 
         try:
-            self.soc_handle = Socket_handle(self.Mlogger ,self)
+            self.soc_handle = Socket_handle(self.Mlogger, self)
         except Exception as exc:
             print(exc)
             self.Mlogger.logger(4, '***BIND PORT ERR***', name='SocketServer')
             raise SystemExit
 
         self.Mlogger.logger(0, '检查必要的数据表', name='ServerCheck')
-        self.__process = Process_Control(self.Mlogger, '{0} manage.py migrate'.format(self.read_config()['PYCMD']), self.read_config()['DEBUG'], ensoc=False)
+        self.__process = Process_Control(self.Mlogger, '{0} manage.py migrate'.format(self.read_config()['PYCMD']),
+                                         self.read_config()['DEBUG'], ensoc=False)
         self.__process.join()
 
-    def start_all_server(self: classmethod):
-         while True:
+    def start_all_server(self):
+        while True:
             self.Mlogger.logger(0, 'StartProcess', name='ProcessServer')
             self.process = Process_Control(self.Mlogger, '{0} manage.py runserver 0:{1}'.format(self.read_config()['PYCMD'], self.read_config()['WEBPORT']), ensoc=True, wsoc=self.ws_handle, soc=self.soc_handle)
             self.process.join()
-            if self.process.restart_flag == False:
+            if not self.process.restart_flag:
                 break
-    
-    def read_config(self: classmethod) -> dict:
+
+    def read_config(self) -> dict:
         try:
             f = open('./configs/config.json', 'r')
         except:
@@ -634,17 +649,17 @@ class Server_Control():
             JSON = json.loads(f.read())
             return JSON
 
+
 try:
     print("init server....")
     process = Server_Control(sys.argv)
 except:
     import traceback
+
     traceback.print_exc()
     input('Fail to initialize Server, press enter to exit.')
 else:
     process.start_all_server()
-
-
 
 # netstat -anp | grep 880
 
@@ -653,12 +668,10 @@ else:
 # python3 manage.py runserver 0:880
 
 
-
 # ADDRESS = ('127.0.0.1', 8712)
- 
+
 # g_socket_server = None
 # g_conn_pool = []
-
 
 
 # init()

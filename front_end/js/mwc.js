@@ -1,8 +1,8 @@
 function MWC_SYSTEM(){
     init_mlog()
     MWCONSOLE.shell_name = "none"
-    this.mwc_usr = new MWC_USER()
-    this.wsoc = new websocket()
+    MWCONSOLE.mwc_usr = new MWC_USER()
+    MWCONSOLE.wsoc = new websocket()
     MWCONSOLE.getElementById = document.getElementById
 }
 

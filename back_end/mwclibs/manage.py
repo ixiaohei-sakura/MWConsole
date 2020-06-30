@@ -1,11 +1,10 @@
 import os
 import sys
-import json
 import threading
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'MwebConsole.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mwc-httpserver.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -15,16 +14,17 @@ def main():
             "forget to activate a virtual environment?")from exc
     execute_from_command_line(sys.argv)
 
+
 def out():
     while True:
         sys.stdout.write('\r\n')
         sys.stdout.flush()
+
 
 sys.stdout.write('Django is nothing wrong')
 sys.stdout.write('\r\n')
 sys.stdout.flush()
 thread = threading.Thread(target=out)
 thread.setDaemon(True)
-thread.start()
+# thread.start()
 main()
-

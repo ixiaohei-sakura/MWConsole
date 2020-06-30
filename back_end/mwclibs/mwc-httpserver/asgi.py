@@ -1,5 +1,5 @@
 """
-ASGI config for MwebConsole project.
+ASGI config for mwc-httpserver project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'MwebConsole.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mwc-httpserver.settings')
 
 application = get_asgi_application()

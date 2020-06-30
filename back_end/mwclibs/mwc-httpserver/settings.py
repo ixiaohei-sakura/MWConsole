@@ -22,7 +22,7 @@ def _print(data):
     sys.stdout.flush()
 
 class MwebLogger():
-    def __init__(self: classmethod, level: int, data: str, name='MwebConsole'):
+    def __init__(self: classmethod, level: int, data: str, name='mwc-httpserver'):
         self.name = name
         self.level = level
         self.data = data

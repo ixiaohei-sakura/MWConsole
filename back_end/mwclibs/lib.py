@@ -13,7 +13,7 @@ from logging.handlers import TimedRotatingFileHandler
 from subprocess import PIPE, Popen
 
 class MwebLogger():
-    def __init__(self: classmethod, name='MwebConsole'):
+    def __init__(self: classmethod, name='mwc-httpserver'):
         self.name = name
         self._logger = self._setup_log_file(name)
 
@@ -146,13 +146,13 @@ class Socket_handle():
                 self.Mlogger.logger(0, tmp.msg, name='ClientSend')
             elif tmp.msgtype == 'cmd':
                 if tmp.msg == 'stop':
-                    if self.process.stop():
+                    if self.process.stop:
                         client.sendall(self.send_json('cmd_return', '成功停止服务器'))
                         self.Mlogger.logger(0, 'SocketServer会自动停止', name='SocketServer')
                     else:
                         client.sendall(self.send_json('cmd_return', '未能成功停止服务器'))
                 elif tmp.msg == 'reload':
-                    if self.process.restart():
+                    if self.process.restart:
                         client.sendall(self.send_json('cmd_return', '成功重载服务器'))
                     else:
                         client.sendall(self.send_json('cmd_return', '未能成功重载服务器'))
@@ -224,7 +224,7 @@ class Start_Interface(): # Socket_handle
     def check_config(self: classmethod):
         if os.path.isfile('./configs/config.json') is not True:
             with open('./configs/config.json', 'w') as f:
-                tmp = {"ALLOWED_HOSTS": [],"LANGUAGE_CODE": "en-us","TIME_ZONE": "UTC","STATIC_URL": "/static/","ROOT_URLCONF": "MwebConsole.urls","SECRET_KEY": "=&=^c#s^lm*#fsxw=odr7&t7!&6m&76si+=f@cx8kc@krrgw!-","WSGI_APPLICATION": "MwebConsole.wsgi.application","USE_I18N": True,"USE_L10N": True,"USE_TZ": True,"DEBUG": True,"SOCKET": {"ADDR": "127.0.0.1","PORT": "3547"}}
+                tmp = {"ALLOWED_HOSTS": [],"LANGUAGE_CODE": "en-us","TIME_ZONE": "UTC","STATIC_URL": "/static/","ROOT_URLCONF": "mwc-httpserver.urls","SECRET_KEY": "=&=^c#s^lm*#fsxw=odr7&t7!&6m&76si+=f@cx8kc@krrgw!-","WSGI_APPLICATION": "mwc-httpserver.wsgi.application","USE_I18N": True,"USE_L10N": True,"USE_TZ": True,"DEBUG": True,"SOCKET": {"ADDR": "127.0.0.1","PORT": "3547"}}
                 JSON = json.dumps(tmp, indent=3)
                 f.write(JSON)
 
