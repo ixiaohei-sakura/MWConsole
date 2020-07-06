@@ -1,4 +1,3 @@
-![logo](https://raw.githubusercontent.com/ixiaohei-sakura/MWConsole/master/image.png)
 # MWConsole
 ### 仍在开发中，建议不要下载和使用
 ##### MCDReforged 网页管理控制台
