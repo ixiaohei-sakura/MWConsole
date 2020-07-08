@@ -266,7 +266,7 @@ class Start_Interface(): # Socket_handle
 
     def join(self: classmethod):
         try:
-            self.Monitor.thread.join()
+            self.Monitor.monitor_thread.join()
         except KeyboardInterrupt:
             try:
                 print('')
@@ -292,7 +292,7 @@ class ProcessMonitor():
 
     def monitor(self: classmethod):
         self.process_i.Mlogger.logger(0, 'Monitor Started')
-        while self.process_i.process.poll() is None:
+        while self.process_i.server.poll() is None:
             self.process_i.Mlogger.logger(0, self.process_i.recv())
         self.process_i.Mlogger.logger(0, 'Monitor Stoped')
         return

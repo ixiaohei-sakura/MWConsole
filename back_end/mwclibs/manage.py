@@ -4,7 +4,7 @@ import threading
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mwc-httpserver.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'MwebConsole.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -21,10 +21,6 @@ def out():
         sys.stdout.flush()
 
 
-sys.stdout.write('Django is nothing wrong')
-sys.stdout.write('\r\n')
-sys.stdout.flush()
-thread = threading.Thread(target=out)
-thread.setDaemon(True)
-# thread.start()
+sys.stderr = sys.stdout
+threading.Thread(target=out, daemon=True).start()
 main()
