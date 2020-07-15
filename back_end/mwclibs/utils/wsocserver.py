@@ -11,6 +11,8 @@ class WSocket_handle:
         self.process = process
         self.client_list = []
         self.client_count = 0
+        self.addr = read_config()['WSOCKET']['ADDR']
+        self.port = read_config()['WSOCKET']['PORT']
         self.start_ws()
 
     async def login(self, websocket: websockets.server.WebSocketServerProtocol, path: str):
@@ -54,7 +56,7 @@ class WSocket_handle:
 
     def init(self, e_loop: asyncio.AbstractEventLoop):
         asyncio.set_event_loop(e_loop)
-        self.start_server = websockets.serve(self.main_logic, read_config()['WSOCKET']['ADDR'], read_config()['WSOCKET']['PORT'])
+        self.start_server = websockets.serve(self.main_logic, self.addr, self.port)
         self.serve_async = asyncio.get_event_loop()
         self.serve_async.run_until_complete(self.start_server)
         asyncio.get_event_loop().run_forever()
@@ -65,7 +67,7 @@ class WSocket_handle:
             self.serve_thread = threading.Thread(target=self.init, args=[self.serve_async])
             self.serve_thread.setDaemon(True)
             self.serve_thread.start()
-            self.Mlogger.logger(0, 'WSocketServer已启动, 等待网页端上线', name='WSocketServer')
+            self.Mlogger.logger(0, f'WSocketServer已启动, 等待网页端上线, 监听地址为 {self.addr}:{self.port}', name='WSocketServer')
         except:
             pass
 

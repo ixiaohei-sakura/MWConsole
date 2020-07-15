@@ -6,19 +6,9 @@ from .server_status import *
 
 class Socket_handle:
     def __init__(self, Mlogger, process):
+        self.id_conn_pool = None
         self.Mlogger = Mlogger
         self.process_ = process
-        self.num_online_client: int
-        self.addr: str
-        self.port: int
-        self.FULLADDR: tuple
-        self.socket: socket.socket
-        self.s_conn_pool: list
-        self.s_thre_pool: list
-        self.s_thre_dict: dict
-        self.id_conn_pool = {}
-        self.accept_thread: threading.Thread
-        self._unload()
         self._load()
         self.init()
         super().__init__()
@@ -34,32 +24,13 @@ class Socket_handle:
         self.online_client = []
         self.s_thre_dict = {}
 
-    def _unload(self):
-        self.addr = None
-        self.port = None
-        self.FULLADDR = None
-        self.socket = None
-        self.s_conn_pool = None
-        self.s_thre_pool = None
-        self.s_thre_dict = None
-        self.num_online_client = None
-        self.addr: str
-        self.port: int
-        self.FULLADDR: tuple
-        self.socket: socket.socket
-        self.s_conn_pool: list
-        self.s_thre_pool: list
-        self.num_online_client: int
-        self.online_client: list
-        self.s_thre_dict: dict
-
     def init(self):
         self.socket.bind(self.FULLADDR)
         self.socket.listen(5)
         thread = threading.Thread(target=self.accept_client)
         thread.setDaemon(True)
         thread.start()
-        self.Mlogger.logger(0, "SocketServer已启动, 等待客户端连接", name='SocketServer')
+        self.Mlogger.logger(0, f"SocketServer已启动, 等待客户端连接, 监听地址为 {self.addr}:{self.port}", name='SocketServer')
 
     def accept_client(self):
         while True:
