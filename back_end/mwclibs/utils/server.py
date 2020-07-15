@@ -121,14 +121,15 @@ class Server_Control:
     def __start_internet_connection__(self):
         try:
             self.ws_handle = WSocket_handle(self.Mlogger, self)
-        except:
-            self.Mlogger.logger(4, '***BIND PORT ERR***', name='WSocketServer')
+        except Exception as exc:
+            self.Mlogger.logger(4, '***ERR***', name='WSocketServer')
+            print(str(exc))
             raise SystemExit
         try:
             self.soc_handle = Socket_handle(self.Mlogger, self)
         except Exception as exc:
-            print(exc)
-            self.Mlogger.logger(4, '***BIND PORT ERR***', name='SocketServer')
+            self.Mlogger.logger(4, '***ERR***', name='SocketServer')
+            print(str(exc))
             raise SystemExit
 
     @log_call
