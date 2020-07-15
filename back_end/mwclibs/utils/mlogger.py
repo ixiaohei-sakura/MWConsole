@@ -27,16 +27,9 @@ class MLogger:
         logger.addHandler(file_handler)
         return logger
 
-    def logger(self, level: int, data: str, name='Main', end='\n'):
-        now_time = self._get_time()
+    def __print(self, data, level, now_time, name, end):
         if len(data) == 0:
             return
-        for i in range(100):
-            if i == 0: i = 1
-            data = data.replace('\n' * i, '')
-        for i in range(100):
-            if i == 0: i = 1
-            data = data.replace('\r' * i, '')
         if level == 0:
             print(f'[\033[1;32m{self.name}\033[0m][{now_time}][{name}/\033[1;32mINFO\033[0m]: {data}', end=end)
             self._logger.info(data)
@@ -47,11 +40,24 @@ class MLogger:
             print(f'[\033[1;32m{self.name}\033[0m][{now_time}][{name}/\033[1;31mERROR\033[0m]: {data}', end=end)
             self._logger.error(data)
         elif level == 3:
-            print(f'[\033[1;32m{self.name}\033[0m][{now_time}][{name}/\033[1;34mDEBUG\033[0m]: \033[1;34m{data}\033[0m', end=end)
+            print(
+                f'[\033[1;32m{self.name}\033[0m][{now_time}][{name}/\033[1;34mDEBUG\033[0m]: \033[1;34m{data}\033[0m',
+                end=end)
             self._logger.debug(data)
         elif level == 4:
             print(f'[\033[1;32m{self.name}\033[0m][{now_time}][{name}/\033[1;31mCRITICAL\033[0m]: {data}', end=end)
             self._logger.critical(data)
+
+    def logger(self, level: int, data, name='Main', end='\n'):
+        now_time = self._get_time()
+        if type(data) is str:
+            self.__print(data, level, now_time, name, end)
+        elif type(data) is list:
+            for ___ in data:
+                self.__print(___, level, now_time, name, end)
+        else:
+            print("传入的参数的类型: ", type(data))
+            raise TypeError("Mlogger记录器被传入了错误的参数，如果您不知道这是什么意思，请提交错误追溯。如果您是开发者并且正在改动MWC，请仔细检查您写的代码")
 
     @property
     def get_logger_(self):

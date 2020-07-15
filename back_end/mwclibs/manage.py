@@ -1,6 +1,7 @@
 import os
 import sys
 import threading
+import time
 
 
 def main():
@@ -18,7 +19,6 @@ def main():
 def out():
     while True:
         sys.stdout.write('\r\n')
-        sys.stdout.flush()
 
 
 sys.stderr = sys.stdout

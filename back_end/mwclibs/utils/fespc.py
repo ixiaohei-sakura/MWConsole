@@ -187,12 +187,25 @@ class ProcessMonitor:
         self.monitor_thread = None
         self.start_monitor()
 
+    def replace_n(self, data):
+        if len(data) == 0:
+            return data
+        for __ in range(100):
+            if __ == 0:
+                __ = 1
+            data = data.replace('\n' * __, '')
+        for _ in range(100):
+            if _ == 0:
+                _ = 1
+            data = data.replace('\r' * _, '')
+        return data
+
     @log_call
     def monitor(self, _info: bool):
         if _info:
             self.process_i.Mlogger.logger(0, 'Monitor Started', name="Process")
         while self.process_i.process.poll() is None:
-            self.process_i.Mlogger.logger(0, self.process_i.recv(), name="Process")
+            self.process_i.Mlogger.logger(0, self.replace_n(self.process_i.recv()).split("\n"), name="Process")
             time.sleep(server.tick)
         if _info:
             self.process_i.Mlogger.logger(0, 'Monitor Stoped', name="Process")
@@ -200,7 +213,8 @@ class ProcessMonitor:
 
     def stderr_monitor(self):
         while True:
-            self.process_i.Mlogger.logger(1, self.process_i.process.stderr.read().decode("utf-8"), name="ProcessWarn")
+            self.process_i.Mlogger.logger(1, (self.process_i.process.stderr.read().decode("utf-8")).split("\n"),
+                                          name="ProcessWarn")
             time.sleep(server.tick)
 
     @log_call

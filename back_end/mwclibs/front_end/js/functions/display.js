@@ -8,6 +8,7 @@ function page_display(element){
         servermanage.style.display = "none"
         shell.style.display = "none"
         main.style.display = ""
+        MWCONSOLE.now_window = "mp"
         MainPage()
         load_page()
         MWCONSOLE.info("主页面加载")
@@ -17,6 +18,7 @@ function page_display(element){
         shell.style.display = "none"
         main.style.display = "none"
         servermanage.style.display = ""
+        MWCONSOLE.now_window = "sp"
         ServerManagePage()
         load_page()
         MWCONSOLE.info("服务器管理页面加载")
@@ -26,6 +28,7 @@ function page_display(element){
         main.style.display = "none"
         servermanage.style.display = "none"
         shell.style.display = ""
+        MWCONSOLE.now_window = "shp"
         ShellPage()
         load_page()
         MWCONSOLE.info("终端页面加载")
@@ -35,6 +38,7 @@ function page_display(element){
         main.style.display = "none"
         servermanage.style.display = "none"
         login.style.display = ""
+        MWCONSOLE.now_window = "lp"
         LoginHandle()
         load_page()
         MWCONSOLE.info("登录页面加载")

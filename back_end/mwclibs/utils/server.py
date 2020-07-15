@@ -409,14 +409,18 @@ class Server_Control:
 @log_call
 def main():
     try:
-        print("init server....")
+        for i in range(10):
+            print("初始化服务器/initializing server", "."*i, end="\r")
+            time.sleep(server.tick*4)
         process = Server_Control(sys.argv)
     except:
         import traceback
         traceback.print_exc()
-        print('Fail to initialize Server')
+        print('服务器初始化失败/Fail to initialize Server')
     else:
         # 此函数为阻塞函数, 保持阻塞直到服务器被 ^C 或 kill 停止.
+        process.Mlogger.logger(0, "服务器启动/初始化成功/initialized")
+        time.sleep(0.5)
         process.start_server()
         rm_tmp()
         raise SystemExit

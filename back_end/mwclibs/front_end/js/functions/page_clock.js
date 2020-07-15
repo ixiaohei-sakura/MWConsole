@@ -15,7 +15,9 @@ function get_time(){
 function now_t(){
     let e = document.getElementById("now_time")
     function progress(){
-        e.innerHTML = get_time()
+        if (MWCONSOLE.now_window === "mp"){
+            e.innerHTML = get_time()
+        }
     }
     setInterval(progress, 300)
 }
