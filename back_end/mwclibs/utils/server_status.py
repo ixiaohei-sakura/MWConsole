@@ -65,10 +65,11 @@ def getdebug():
 
 
 @log_call
-def stop_server(_self):
+def stop_server(_self, _a_=False):
     print('')
     _self.Mlogger.logger(0, 'STOPPING', name='STATUS')
-    _self.stop()
+    if _a_ is False:
+        _self.stop()
     _self.Monitor.stop_monitor()
     _self.ws_handle.stop_ws()
     _self.Mlogger.logger(0, f"服务器状态: {_self.server_status}")

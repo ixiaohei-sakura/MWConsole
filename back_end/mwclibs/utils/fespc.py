@@ -68,7 +68,7 @@ class FrontEndServerProcessControl:
             if self.__start_popen__(self.start_cmd):
                 try:
                     self.Monitor.start_monitor()
-                except Exception:
+                except AttributeError:
                     pass
                 self.server_status = ServerStatus.ISRUNNING
             else:
@@ -99,6 +99,7 @@ class FrontEndServerProcessControl:
         if self.server_status is ServerStatus.ISRUNNING or self.server_status is ServerStatus.STOPED_by_func_call:
             self.Mlogger.logger(0, '===BEGIN TO RESTART===')
             self.Mlogger.logger(0, '所有线程全部退出, 等待主进程停止.')
+            self.stop(func_call=True)
             self.Mlogger.logger(0, 'Main Process call to wait {} seconds.'.format(ttw))
             time.sleep(ttw)
             self.Mlogger.logger(0, '======RESTARTING======')
@@ -198,6 +199,15 @@ class ProcessMonitor:
             if _ == 0:
                 _ = 1
             data = data.replace('\r' * _, '')
+        return self.out(data)
+
+    def out(self, data=""):
+        if data.find("background.jpg") >= 0:
+            return ""
+        if data.find("logo.png") >= 0:
+            return ""
+        if data.find("HTTP") >= 0:
+            return "\033[1;33m" + data + "\033[0m"
         return data
 
     @log_call
@@ -211,6 +221,7 @@ class ProcessMonitor:
             self.process_i.Mlogger.logger(0, 'Monitor Stoped', name="Process")
         return
 
+    @log_call
     def stderr_monitor(self):
         while True:
             self.process_i.Mlogger.logger(1, (self.process_i.process.stderr.read().decode("utf-8")).split("\n"),
