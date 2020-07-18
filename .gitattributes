@@ -1,0 +1,7 @@
+check_browser.js linguist-language=python
+display.js linguist-language=python
+loadpage.js linguist-language=python
+logger.js linguist-language=python
+page_clock.js linguist-language=python
+rsa.js linguist-language=python
+login.js linguist-language=python
