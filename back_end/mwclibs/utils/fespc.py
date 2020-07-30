@@ -8,6 +8,67 @@ from .server_status import *
 
 
 class FrontEndServerProcessControl:
+    def stdout_recv(self) -> str:
+        """
+        从stdout中读取数据
+        :return:
+        """
+        r = ''
+        pr = self.process.stdout
+        while True:
+            if not select.select([pr], [], [], server.tick)[0]:
+                time.sleep(server.tick)
+                continue
+            r = pr.read()
+            return str(r.rstrip(), encoding='UTF-8')
+        return str(r.rstrip(), encoding='UTF-8')
+
+    def stderr_recv(self) -> str:
+        """
+        从stderr中读取数据
+        :return:
+        """
+        r = ''
+        pr = self.process.stderr
+        while True:
+            if not select.select([pr], [], [], server.tick)[0]:
+                time.sleep(server.tick)
+                continue
+            r = pr.read()
+            return str(r.rstrip(), encoding='UTF-8')
+        return str(r.rstrip(), encoding='UTF-8')
+
+    def send(self, data: str) -> None:
+        """
+        向服务器的stdin发送数据
+        :param data: 要发送的数据，是一个str
+        :return:
+        """
+        self.process.stdin.write(bytes(data, encoding='UTF-8'))
+        self.process.stdin.write(b'\r\n')
+        self.process.stdin.flush()
+
+    def join(self):
+        """
+        在服务器运行时，此函数会阻塞
+        :return:
+        """
+        if self.server_status is ServerStatus.ISTARTING or self.server_status is ServerStatus.ISRUNNING:
+            try:
+                try:
+                    self.Monitor.monitor_thread.join()
+                except KeyboardInterrupt:
+                    stop_server(self)
+            except KeyboardInterrupt:
+                try:
+                    stop_server(self)
+                except KeyboardInterrupt:
+                    try:
+                        stop_server(self)
+                    except KeyboardInterrupt:
+                        stop_server(self)
+
+    @log_call
     def __init__(self, Mlogger, cmd: str, Monitor=True, ensoc=True, wsoc=None, soc=None) -> None:
         self.start_cmd = cmd
         self.Mlogger = Mlogger
@@ -106,66 +167,6 @@ class FrontEndServerProcessControl:
 
             os.execl(sys.executable, sys.executable, *sys.argv)
 
-    def recv(self) -> str:
-        """
-        从stdout中读取数据
-        :return:
-        """
-        r = ''
-        pr = self.process.stdout
-        while True:
-            if not select.select([pr], [], [], server.tick)[0]:
-                time.sleep(server.tick)
-                continue
-            r = pr.read()
-            return str(r.rstrip(), encoding='UTF-8')
-        return str(r.rstrip(), encoding='UTF-8')
-
-    def stderr_recv(self) -> str:
-        """
-        从stderr中读取数据
-        :return:
-        """
-        r = ''
-        pr = self.process.stderr
-        while True:
-            if not select.select([pr], [], [], server.tick)[0]:
-                time.sleep(server.tick)
-                continue
-            r = pr.read()
-            return str(r.rstrip(), encoding='UTF-8')
-        return str(r.rstrip(), encoding='UTF-8')
-
-    def send(self, data: str) -> None:
-        """
-        向服务器的stdin发送数据
-        :param data: 要发送的数据，是一个str
-        :return:
-        """
-        self.process.stdin.write(bytes(data, encoding='UTF-8'))
-        self.process.stdin.write(b'\r\n')
-        self.process.stdin.flush()
-
-    def join(self):
-        """
-        在服务器运行时，此函数会阻塞
-        :return:
-        """
-        if self.server_status is ServerStatus.ISTARTING or self.server_status is ServerStatus.ISRUNNING:
-            try:
-                try:
-                    self.Monitor.monitor_thread.join()
-                except KeyboardInterrupt:
-                    stop_server(self)
-            except KeyboardInterrupt:
-                try:
-                    stop_server(self)
-                except KeyboardInterrupt:
-                    try:
-                        stop_server(self)
-                    except KeyboardInterrupt:
-                        stop_server(self)
-
     @log_call
     def __start_popen__(self, start_cmd: str) -> bool:
         try:
@@ -188,7 +189,7 @@ class ProcessMonitor:
         self.monitor_thread = None
         self.start_monitor()
 
-    def replace_n(self, data):
+    def __replace_n_(self, data):
         if len(data) == 0:
             return data
         for __ in range(100):
@@ -199,9 +200,9 @@ class ProcessMonitor:
             if _ == 0:
                 _ = 1
             data = data.replace('\r' * _, '')
-        return self.out(data)
+        return self.__out_(data)
 
-    def out(self, data=""):
+    def __out_(self, data=""):
         if data.find("background.jpg") >= 0:
             return ""
         if data.find("logo.png") >= 0:
@@ -215,7 +216,8 @@ class ProcessMonitor:
         if _info:
             self.process_i.Mlogger.logger(0, 'Monitor Started', name="Process")
         while self.process_i.process.poll() is None:
-            self.process_i.Mlogger.logger(0, self.replace_n(self.process_i.recv()).split("\n"), name="Process")
+            self.process_i.Mlogger.logger(0, self.__replace_n_(self.process_i.stdout_recv()).split("\n"),
+                                          name="Process")
             time.sleep(server.tick)
         if _info:
             self.process_i.Mlogger.logger(0, 'Monitor Stoped', name="Process")
@@ -224,8 +226,8 @@ class ProcessMonitor:
     @log_call
     def stderr_monitor(self):
         while True:
-            self.process_i.Mlogger.logger(1, (self.process_i.process.stderr.read().decode("utf-8")).split("\n"),
-                                          name="ProcessWarn")
+            # self.process_i.Mlogger.logger(1, (self.process_i.process.stderr.read().decode("utf-8")).split("\n"),
+            #                               name="ProcessWarn")
             time.sleep(server.tick)
 
     @log_call

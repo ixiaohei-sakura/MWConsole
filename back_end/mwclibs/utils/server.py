@@ -124,13 +124,13 @@ class Server_Control:
         except Exception as exc:
             self.Mlogger.logger(4, '***ERR***', name='WSocketServer')
             print(str(exc))
-            raise SystemExit
+            raise SystemExit("端口被占用")
         try:
             self.soc_handle = Socket_handle(self.Mlogger, self)
         except Exception as exc:
             self.Mlogger.logger(4, '***ERR***', name='SocketServer')
             print(str(exc))
-            raise SystemExit
+            raise SystemExit("端口被占用")
 
     @log_call
     def __init_server__(self):
@@ -280,8 +280,8 @@ class Server_Control:
                 if len(buff) is not 0:
                     self.pycmd = buff
                 else:
-                    print("python命令未输入，默认为python3.7")
-                    self.pycmd = "python3.7"
+                    print(f"python命令未输入，默认为启动现在程序的命令: {str(sys.executable)}")
+                    self.pycmd = str(sys.executable)
                 print(f"已经设置的配置项：python命令:{self.pycmd}")
                 buff = input("[是否确认? y/n]> ")
                 if buff is "y":

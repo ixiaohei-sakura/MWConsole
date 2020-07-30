@@ -1,109 +1,289 @@
-[2020-07-18 10:32:18,866][mlogger.__print(mlogger.py:35)][28542][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
-[2020-07-18 10:32:18,873][mlogger.__print(mlogger.py:35)][28542][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
-[2020-07-18 10:32:18,873][mlogger.__print(mlogger.py:35)][28542][INFO]:检查必要的数据表
-[2020-07-18 10:32:18,875][mlogger.__print(mlogger.py:35)][28542][INFO]:Server Running at PID:28546
-[2020-07-18 10:32:19,537][mlogger.__print(mlogger.py:35)][28542][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
-[2020-07-18 10:32:21,545][mlogger.__print(mlogger.py:38)][28542][WARNING]:Fatal Python error: could not acquire lock for <_io.BufferedWriter name='<stdout>'> at interpreter shutdown, possibly due to daemon threads
-[2020-07-18 10:32:21,545][mlogger.__print(mlogger.py:38)][28542][WARNING]:Thread 0x0000700007f3b000 (most recent call first):
-[2020-07-18 10:32:21,545][mlogger.__print(mlogger.py:38)][28542][WARNING]:  File "manage.py", line 21 in out
-[2020-07-18 10:32:21,545][mlogger.__print(mlogger.py:38)][28542][WARNING]:  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 865 in run
-[2020-07-18 10:32:21,546][mlogger.__print(mlogger.py:38)][28542][WARNING]:  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 917 in _bootstrap_inner
-[2020-07-18 10:32:21,546][mlogger.__print(mlogger.py:38)][28542][WARNING]:  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 885 in _bootstrap
-[2020-07-18 10:32:21,546][mlogger.__print(mlogger.py:38)][28542][WARNING]:Current thread 0x000000011dd28dc0 (most recent call first):
-[2020-07-18 10:32:21,596][mlogger.__print(mlogger.py:35)][28542][INFO]:服务器启动/初始化成功/initialized
-[2020-07-18 10:32:22,097][mlogger.__print(mlogger.py:35)][28542][INFO]:StartServerProcess
-[2020-07-18 10:32:22,100][mlogger.__print(mlogger.py:35)][28542][INFO]:Server Running at PID:28549
-[2020-07-18 10:32:22,101][mlogger.__print(mlogger.py:35)][28542][INFO]:    __  ____      _____/\
-[2020-07-18 10:32:22,101][mlogger.__print(mlogger.py:35)][28542][INFO]:   /  |/  / | /| / / ___/
-[2020-07-18 10:32:22,101][mlogger.__print(mlogger.py:35)][28542][INFO]:  / /|_/ /| |/ |/ / /__  
-[2020-07-18 10:32:22,101][mlogger.__print(mlogger.py:35)][28542][INFO]: / /  /_/ |__/|__/\___/
-[2020-07-18 10:32:22,101][mlogger.__print(mlogger.py:35)][28542][INFO]: \/
-[2020-07-18 10:32:22,101][mlogger.__print(mlogger.py:35)][28542][INFO]:==== MCDRWEBCONSOLE ====
-[2020-07-18 10:32:22,602][mlogger.__print(mlogger.py:35)][28542][INFO]:正在启动MCDR-WEBCONSOLE
-[2020-07-18 10:32:22,602][mlogger.__print(mlogger.py:35)][28542][INFO]:上报BUG请联系 ixiaohei:
-[2020-07-18 10:32:22,602][mlogger.__print(mlogger.py:35)][28542][INFO]:QQ: 486118772
-[2020-07-18 10:32:22,602][mlogger.__print(mlogger.py:35)][28542][INFO]:mwc-httpserver is OpenSource, find it here:
-[2020-07-18 10:32:22,603][mlogger.__print(mlogger.py:35)][28542][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
-[2020-07-18 10:32:22,603][mlogger.__print(mlogger.py:35)][28542][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
-[2020-07-18 10:32:22,603][mlogger.__print(mlogger.py:35)][28542][INFO]:ServerStarted. Quit the server with CONTROL-C
-[2020-07-18 10:32:22,979][mlogger.__print(mlogger.py:35)][28542][INFO]:Performing system checks...System check identified no issues (0 silenced).July 18, 2020 - 02:32:22Django version 3.0.7, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
-[2020-07-18 10:32:25,102][mlogger.__print(mlogger.py:35)][28542][INFO]:==MWC正在监听标准输入流==
-[2020-07-18 10:32:25,103][mlogger.__print(mlogger.py:35)][28542][INFO]:命令列表: 
-[2020-07-18 10:32:25,103][mlogger.__print(mlogger.py:35)][28542][INFO]:restart: 重启web服务器
-[2020-07-18 10:32:25,103][mlogger.__print(mlogger.py:35)][28542][INFO]:restart_: 重启MWC
-[2020-07-18 10:32:25,103][mlogger.__print(mlogger.py:35)][28542][INFO]:start: 启动web服务器
-[2020-07-18 10:32:25,103][mlogger.__print(mlogger.py:35)][28542][INFO]:stop: 停止MWC
-[2020-07-18 10:32:25,104][mlogger.__print(mlogger.py:35)][28542][INFO]:stop_: 停止web服务器并等待启动
-[2020-07-18 10:32:25,104][mlogger.__print(mlogger.py:35)][28542][INFO]:debug [True/False]开启/关闭debug模式
-[2020-07-18 10:32:25,104][mlogger.__print(mlogger.py:35)][28542][INFO]:命令需以#m#开头, 例: #m#debug True
-[2020-07-18 10:32:34,244][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:34] "GET / HTTP/1.1" 200 9604[0m
-[2020-07-18 10:32:34,353][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:34] "GET /css/mwc.main.css HTTP/1.1" 200 4658[18/Jul/2020 02:32:34] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
-[2020-07-18 10:32:34,463][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:34] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[18/Jul/2020 02:32:34] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[0m
-[2020-07-18 10:32:34,520][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:34] "GET /js/functions/display.js HTTP/1.1" 200 1495[18/Jul/2020 02:32:34] "GET /js/mwc.js HTTP/1.1" 200 578[18/Jul/2020 02:32:34] "GET /js/popper.min.js HTTP/1.1" 200 21004[0m
-[2020-07-18 10:32:34,578][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:34] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[18/Jul/2020 02:32:34] "GET /js/functions/logger.js HTTP/1.1" 200 301[18/Jul/2020 02:32:34] "GET /js/pages/main.js HTTP/1.1" 200 22[0m
-[2020-07-18 10:32:34,630][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:34] "GET /js/functions/page_clock.js HTTP/1.1" 200 748[18/Jul/2020 02:32:34] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[0m
-[2020-07-18 10:32:34,791][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:34] "GET /js/pages/shell.js HTTP/1.1" 200 2421[0m
-[2020-07-18 10:32:34,846][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:34] "GET /js/pages/smanage.js HTTP/1.1" 200 30[0m
-[2020-07-18 10:32:34,901][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:34] "GET /js/ws/websocket_main.js HTTP/1.1" 200 86[0m
-[2020-07-18 10:32:44,970][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:44] "GET / HTTP/1.1" 200 9604[0m
-[2020-07-18 10:32:45,028][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:44] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[18/Jul/2020 02:32:44] "GET /css/mwc.main.css HTTP/1.1" 200 4658[18/Jul/2020 02:32:44] "GET /js/functions/display.js HTTP/1.1" 200 1495[0m
-[2020-07-18 10:32:45,080][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:44] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[18/Jul/2020 02:32:44] "GET /js/mwc.js HTTP/1.1" 200 578[0m
-[2020-07-18 10:32:45,133][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:44] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[0m
-[2020-07-18 10:32:45,192][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:44] "GET /js/popper.min.js HTTP/1.1" 200 21004[0m
-[2020-07-18 10:32:45,247][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:44] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
-[2020-07-18 10:32:45,301][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:45] "GET /js/pages/main.js HTTP/1.1" 200 22[0m
-[2020-07-18 10:32:45,357][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:45] "GET /js/functions/page_clock.js HTTP/1.1" 200 748[18/Jul/2020 02:32:45] "GET /js/functions/logger.js HTTP/1.1" 200 301[18/Jul/2020 02:32:45] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[18/Jul/2020 02:32:45] "GET /js/pages/smanage.js HTTP/1.1" 200 30[0m
-[2020-07-18 10:32:45,461][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:45] "GET /js/pages/login.js HTTP/1.1" 200 2645[0m
-[2020-07-18 10:32:45,512][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:45] "GET /js/pages/shell.js HTTP/1.1" 200 2421[0m
-[2020-07-18 10:32:45,617][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:45] "GET /js/mwc.main.js HTTP/1.1" 200 710[0m
-[2020-07-18 10:32:45,726][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:45] "GET /js/ws/websocket_main.js HTTP/1.1" 200 86[0m
-[2020-07-18 10:32:47,527][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET / HTTP/1.1" 200 9604[0m
-[2020-07-18 10:32:47,637][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /css/mwc.main.css HTTP/1.1" 200 4658[18/Jul/2020 02:32:47] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
-[2020-07-18 10:32:47,691][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/mwc.js HTTP/1.1" 200 578[0m
-[2020-07-18 10:32:47,746][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[18/Jul/2020 02:32:47] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[0m
-[2020-07-18 10:32:47,799][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/functions/display.js HTTP/1.1" 200 1495[0m
-[2020-07-18 10:32:47,852][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/popper.min.js HTTP/1.1" 200 21004[0m
-[2020-07-18 10:32:47,909][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[18/Jul/2020 02:32:47] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[0m
-[2020-07-18 10:32:47,965][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/functions/page_clock.js HTTP/1.1" 200 748[18/Jul/2020 02:32:47] "GET /js/functions/logger.js HTTP/1.1" 200 301[0m
-[2020-07-18 10:32:48,073][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/pages/main.js HTTP/1.1" 200 22[18/Jul/2020 02:32:47] "GET /js/pages/login.js HTTP/1.1" 200 2645[0m
-[2020-07-18 10:32:48,235][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/pages/shell.js HTTP/1.1" 200 2421[0m
-[2020-07-18 10:32:48,344][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/mwc.main.js HTTP/1.1" 200 710[0m
-[2020-07-18 10:32:48,448][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:47] "GET /js/ws/websocket_main.js HTTP/1.1" 200 86[0m
-[2020-07-18 10:32:49,737][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:49] "GET / HTTP/1.1" 200 9604[0m
-[2020-07-18 10:32:49,794][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:49] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
-[2020-07-18 10:32:49,900][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:49] "GET /css/mwc.main.css HTTP/1.1" 200 4658[18/Jul/2020 02:32:49] "GET /js/mwc.js HTTP/1.1" 200 578[0m
-[2020-07-18 10:32:49,957][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:49] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[18/Jul/2020 02:32:49] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[0m
-[2020-07-18 10:32:50,013][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:49] "GET /js/functions/display.js HTTP/1.1" 200 1495[0m
-[2020-07-18 10:32:50,065][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:49] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[18/Jul/2020 02:32:49] "GET /js/popper.min.js HTTP/1.1" 200 21004[0m
-[2020-07-18 10:32:50,120][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:49] "GET /js/pages/main.js HTTP/1.1" 200 22[0m
-[2020-07-18 10:32:50,174][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:49] "GET /js/functions/page_clock.js HTTP/1.1" 200 748[0m
-[2020-07-18 10:32:50,280][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:49] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[18/Jul/2020 02:32:49] "GET /js/functions/logger.js HTTP/1.1" 200 301[18/Jul/2020 02:32:50] "GET /js/pages/login.js HTTP/1.1" 200 2645[0m
-[2020-07-18 10:32:50,434][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:50] "GET /js/pages/smanage.js HTTP/1.1" 200 30[0m
-[2020-07-18 10:32:50,487][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:50] "GET /js/mwc.main.js HTTP/1.1" 200 710[0m
-[2020-07-18 10:32:50,542][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:50] "GET /js/ws/websocket_main.js HTTP/1.1" 200 86[0m
-[2020-07-18 10:32:52,583][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET / HTTP/1.1" 200 9604[18/Jul/2020 02:32:52] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
-[2020-07-18 10:32:52,637][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
-[2020-07-18 10:32:52,693][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
-[2020-07-18 10:32:52,852][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET /js/popper.min.js HTTP/1.1" 200 21004[18/Jul/2020 02:32:52] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[0m
-[2020-07-18 10:32:52,910][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET /js/mwc.js HTTP/1.1" 200 578[0m
-[2020-07-18 10:32:52,966][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[0m
-[2020-07-18 10:32:53,071][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET /js/functions/display.js HTTP/1.1" 200 1495[18/Jul/2020 02:32:52] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[0m
-[2020-07-18 10:32:53,126][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET /js/pages/login.js HTTP/1.1" 200 2645[0m
-[2020-07-18 10:32:53,180][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET /js/pages/main.js HTTP/1.1" 200 22[0m
-[2020-07-18 10:32:53,235][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:52] "GET /js/functions/logger.js HTTP/1.1" 200 301[18/Jul/2020 02:32:52] "GET /js/functions/page_clock.js HTTP/1.1" 200 748[0m
-[2020-07-18 10:32:53,397][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:53] "GET /js/pages/smanage.js HTTP/1.1" 200 30[0m
-[2020-07-18 10:32:53,501][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:53] "GET /js/pages/shell.js HTTP/1.1" 200 2421[0m
-[2020-07-18 10:32:53,604][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:53] "GET /js/mwc.main.js HTTP/1.1" 200 710[0m
-[2020-07-18 10:32:53,659][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:53] "GET /js/ws/websocket_main.js HTTP/1.1" 200 86[0m
-[2020-07-18 10:32:56,242][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET / HTTP/1.1" 200 9604[0m
-[2020-07-18 10:32:56,294][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /css/mwc.main.css HTTP/1.1" 200 4658[18/Jul/2020 02:32:56] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
-[2020-07-18 10:32:56,350][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/functions/display.js HTTP/1.1" 200 1495[18/Jul/2020 02:32:56] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[0m
-[2020-07-18 10:32:56,405][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/mwc.js HTTP/1.1" 200 578[0m
-[2020-07-18 10:32:56,463][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[18/Jul/2020 02:32:56] "GET /js/popper.min.js HTTP/1.1" 200 21004[18/Jul/2020 02:32:56] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
-[2020-07-18 10:32:56,521][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/pages/main.js HTTP/1.1" 200 22[18/Jul/2020 02:32:56] "GET /js/functions/page_clock.js HTTP/1.1" 200 748[0m
-[2020-07-18 10:32:56,577][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[0m
-[2020-07-18 10:32:56,680][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/functions/logger.js HTTP/1.1" 200 301[0m
-[2020-07-18 10:32:56,738][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/pages/login.js HTTP/1.1" 200 2645[0m
-[2020-07-18 10:32:56,793][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/pages/smanage.js HTTP/1.1" 200 30[18/Jul/2020 02:32:56] "GET /js/pages/shell.js HTTP/1.1" 200 2421[0m
-[2020-07-18 10:32:56,901][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/mwc.main.js HTTP/1.1" 200 710[0m
-[2020-07-18 10:32:56,958][mlogger.__print(mlogger.py:35)][28542][INFO]:[1;33m[18/Jul/2020 02:32:56] "GET /js/ws/websocket_main.js HTTP/1.1" 200 86[0m
+[2020-07-30 09:59:18,950][mlogger.__print(mlogger.py:35)][10098][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
+[2020-07-30 09:59:18,954][mlogger.__print(mlogger.py:35)][10098][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
+[2020-07-30 09:59:18,954][mlogger.__print(mlogger.py:35)][10098][INFO]:检查必要的数据表
+[2020-07-30 09:59:18,956][mlogger.__print(mlogger.py:35)][10098][INFO]:Server Running at PID:10106
+[2020-07-30 09:59:19,421][mlogger.__print(mlogger.py:35)][10098][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-07-30 09:59:19,523][mlogger.__print(mlogger.py:35)][10098][INFO]:服务器启动/初始化成功/initialized
+[2020-07-30 09:59:20,027][mlogger.__print(mlogger.py:35)][10098][INFO]:StartServerProcess
+[2020-07-30 09:59:20,031][mlogger.__print(mlogger.py:35)][10098][INFO]:Server Running at PID:10107
+[2020-07-30 09:59:20,033][mlogger.__print(mlogger.py:35)][10098][INFO]:    __  ____      _____/\
+[2020-07-30 09:59:20,033][mlogger.__print(mlogger.py:35)][10098][INFO]:   /  |/  / | /| / / ___/
+[2020-07-30 09:59:20,033][mlogger.__print(mlogger.py:35)][10098][INFO]:  / /|_/ /| |/ |/ / /__  
+[2020-07-30 09:59:20,033][mlogger.__print(mlogger.py:35)][10098][INFO]: / /  /_/ |__/|__/\___/
+[2020-07-30 09:59:20,034][mlogger.__print(mlogger.py:35)][10098][INFO]: \/
+[2020-07-30 09:59:20,034][mlogger.__print(mlogger.py:35)][10098][INFO]:==== MCDRWEBCONSOLE ====
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:上报BUG请联系 ixiaohei:
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:QQ: 486118772
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-07-30 09:59:20,651][mlogger.__print(mlogger.py:35)][10098][INFO]:Performing system checks...
+[2020-07-30 09:59:20,705][mlogger.__print(mlogger.py:35)][10098][INFO]:System check identified no issues (0 silenced).July 30, 2020 - 01:59:20Django version 3.0.7, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-07-30 09:59:23,035][mlogger.__print(mlogger.py:35)][10098][INFO]:==MWC正在监听标准输入流==
+[2020-07-30 09:59:23,035][mlogger.__print(mlogger.py:35)][10098][INFO]:命令列表: 
+[2020-07-30 09:59:23,035][mlogger.__print(mlogger.py:35)][10098][INFO]:restart: 重启web服务器
+[2020-07-30 09:59:23,035][mlogger.__print(mlogger.py:35)][10098][INFO]:restart_: 重启MWC
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:start: 启动web服务器
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:stop: 停止MWC
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:stop_: 停止web服务器并等待启动
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:debug [True/False]开启/关闭debug模式
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:命令需以#m#开头, 例: #m#debug True
+[2020-07-30 09:59:43,832][mlogger.__print(mlogger.py:35)][10098][INFO]:STOPPING
+[2020-07-30 09:59:43,886][mlogger.__print(mlogger.py:35)][10098][INFO]:Stoped server, return code: 0
+[2020-07-30 09:59:43,887][mlogger.__print(mlogger.py:35)][10098][INFO]:服务器状态: 服务器已自行停止/SERVER_stoped_by_ITSELF
+[2020-07-30 09:59:43,887][mlogger.__print(mlogger.py:35)][10098][INFO]:Thank you and goodBye! :)
+[2020-07-30 09:59:43,939][mlogger.__print(mlogger.py:35)][10098][INFO]:退出主程序
+[2020-07-30 09:59:53,937][mlogger.__print(mlogger.py:35)][10121][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
+[2020-07-30 09:59:53,937][mlogger.__print(mlogger.py:35)][10121][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
+[2020-07-30 09:59:53,938][mlogger.__print(mlogger.py:35)][10121][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
+[2020-07-30 09:59:53,938][mlogger.__print(mlogger.py:35)][10121][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
+[2020-07-30 09:59:53,939][mlogger.__print(mlogger.py:35)][10121][INFO]:检查必要的数据表
+[2020-07-30 09:59:53,939][mlogger.__print(mlogger.py:35)][10121][INFO]:检查必要的数据表
+[2020-07-30 09:59:53,940][mlogger.__print(mlogger.py:35)][10121][INFO]:Server Running at PID:10126
+[2020-07-30 09:59:53,940][mlogger.__print(mlogger.py:35)][10121][INFO]:Server Running at PID:10126
+[2020-07-30 09:59:54,339][mlogger.__print(mlogger.py:35)][10121][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessions
+[2020-07-30 09:59:54,339][mlogger.__print(mlogger.py:35)][10121][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessions
+[2020-07-30 09:59:54,393][mlogger.__print(mlogger.py:35)][10121][INFO]:Running migrations:  No migrations to apply.
+[2020-07-30 09:59:54,393][mlogger.__print(mlogger.py:35)][10121][INFO]:Running migrations:  No migrations to apply.
+[2020-07-30 09:59:54,448][mlogger.__print(mlogger.py:35)][10121][INFO]:服务器启动/初始化成功/initialized
+[2020-07-30 09:59:54,448][mlogger.__print(mlogger.py:35)][10121][INFO]:服务器启动/初始化成功/initialized
+[2020-07-30 09:59:54,953][mlogger.__print(mlogger.py:35)][10121][INFO]:StartServerProcess
+[2020-07-30 09:59:54,953][mlogger.__print(mlogger.py:35)][10121][INFO]:StartServerProcess
+[2020-07-30 09:59:54,957][mlogger.__print(mlogger.py:35)][10121][INFO]:Server Running at PID:10127
+[2020-07-30 09:59:54,957][mlogger.__print(mlogger.py:35)][10121][INFO]:Server Running at PID:10127
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]:    __  ____      _____/\
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]:    __  ____      _____/\
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]:   /  |/  / | /| / / ___/
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]:   /  |/  / | /| / / ___/
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]:  / /|_/ /| |/ |/ / /__  
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]:  / /|_/ /| |/ |/ / /__  
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]: / /  /_/ |__/|__/\___/
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]: / /  /_/ |__/|__/\___/
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]: \/
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]: \/
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]:==== MCDRWEBCONSOLE ====
+[2020-07-30 09:59:54,959][mlogger.__print(mlogger.py:35)][10121][INFO]:==== MCDRWEBCONSOLE ====
+[2020-07-30 09:59:55,460][mlogger.__print(mlogger.py:35)][10121][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-07-30 09:59:55,460][mlogger.__print(mlogger.py:35)][10121][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:上报BUG请联系 ixiaohei:
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:上报BUG请联系 ixiaohei:
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:QQ: 486118772
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:QQ: 486118772
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-07-30 09:59:55,461][mlogger.__print(mlogger.py:35)][10121][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-07-30 09:59:55,574][mlogger.__print(mlogger.py:35)][10121][INFO]:Performing system checks...System check identified no issues (0 silenced).
+[2020-07-30 09:59:55,574][mlogger.__print(mlogger.py:35)][10121][INFO]:Performing system checks...System check identified no issues (0 silenced).
+[2020-07-30 09:59:55,629][mlogger.__print(mlogger.py:35)][10121][INFO]:July 30, 2020 - 01:59:55Django version 3.0.7, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-07-30 09:59:55,629][mlogger.__print(mlogger.py:35)][10121][INFO]:July 30, 2020 - 01:59:55Django version 3.0.7, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-07-30 09:59:57,763][mlogger.__print(mlogger.py:35)][10121][INFO]:STOPPING
+[2020-07-30 09:59:57,763][mlogger.__print(mlogger.py:35)][10121][INFO]:STOPPING
+[2020-07-30 09:59:57,870][mlogger.__print(mlogger.py:35)][10121][INFO]:Stoped server, return code: 0
+[2020-07-30 09:59:57,870][mlogger.__print(mlogger.py:35)][10121][INFO]:Stoped server, return code: 0
+[2020-07-30 09:59:57,871][mlogger.__print(mlogger.py:35)][10121][INFO]:服务器状态: 服务器已自行停止/SERVER_stoped_by_ITSELF
+[2020-07-30 09:59:57,871][mlogger.__print(mlogger.py:35)][10121][INFO]:服务器状态: 服务器已自行停止/SERVER_stoped_by_ITSELF
+[2020-07-30 09:59:57,871][mlogger.__print(mlogger.py:35)][10121][INFO]:Thank you and goodBye! :)
+[2020-07-30 09:59:57,871][mlogger.__print(mlogger.py:35)][10121][INFO]:Thank you and goodBye! :)
+[2020-07-30 09:59:57,923][mlogger.__print(mlogger.py:35)][10121][INFO]:退出主程序
+[2020-07-30 09:59:57,923][mlogger.__print(mlogger.py:35)][10121][INFO]:退出主程序
+[2020-07-30 10:00:22,206][mlogger.__print(mlogger.py:35)][10139][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
+[2020-07-30 10:00:22,206][mlogger.__print(mlogger.py:35)][10139][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
+[2020-07-30 10:00:22,208][mlogger.__print(mlogger.py:35)][10139][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
+[2020-07-30 10:00:22,208][mlogger.__print(mlogger.py:35)][10139][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
+[2020-07-30 10:00:22,208][mlogger.__print(mlogger.py:35)][10139][INFO]:检查必要的数据表
+[2020-07-30 10:00:22,208][mlogger.__print(mlogger.py:35)][10139][INFO]:检查必要的数据表
+[2020-07-30 10:00:22,210][mlogger.__print(mlogger.py:35)][10139][INFO]:Server Running at PID:10143
+[2020-07-30 10:00:22,210][mlogger.__print(mlogger.py:35)][10139][INFO]:Server Running at PID:10143
+[2020-07-30 10:00:22,777][mlogger.__print(mlogger.py:35)][10139][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-07-30 10:00:22,777][mlogger.__print(mlogger.py:35)][10139][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-07-30 10:00:22,829][mlogger.__print(mlogger.py:35)][10139][INFO]:服务器启动/初始化成功/initialized
+[2020-07-30 10:00:22,829][mlogger.__print(mlogger.py:35)][10139][INFO]:服务器启动/初始化成功/initialized
+[2020-07-30 10:00:23,332][mlogger.__print(mlogger.py:35)][10139][INFO]:StartServerProcess
+[2020-07-30 10:00:23,332][mlogger.__print(mlogger.py:35)][10139][INFO]:StartServerProcess
+[2020-07-30 10:00:23,337][mlogger.__print(mlogger.py:35)][10139][INFO]:Server Running at PID:10145
+[2020-07-30 10:00:23,337][mlogger.__print(mlogger.py:35)][10139][INFO]:Server Running at PID:10145
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]:    __  ____      _____/\
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]:    __  ____      _____/\
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]:   /  |/  / | /| / / ___/
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]:   /  |/  / | /| / / ___/
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]:  / /|_/ /| |/ |/ / /__  
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]:  / /|_/ /| |/ |/ / /__  
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]: / /  /_/ |__/|__/\___/
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]: / /  /_/ |__/|__/\___/
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]: \/
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]: \/
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]:==== MCDRWEBCONSOLE ====
+[2020-07-30 10:00:23,339][mlogger.__print(mlogger.py:35)][10139][INFO]:==== MCDRWEBCONSOLE ====
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:上报BUG请联系 ixiaohei:
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:上报BUG请联系 ixiaohei:
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:QQ: 486118772
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:QQ: 486118772
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-07-30 10:00:23,843][mlogger.__print(mlogger.py:35)][10139][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-07-30 10:00:23,964][mlogger.__print(mlogger.py:35)][10139][INFO]:Performing system checks...System check identified no issues (0 silenced).
+[2020-07-30 10:00:23,964][mlogger.__print(mlogger.py:35)][10139][INFO]:Performing system checks...System check identified no issues (0 silenced).
+[2020-07-30 10:00:24,017][mlogger.__print(mlogger.py:35)][10139][INFO]:July 30, 2020 - 02:00:23Django version 3.0.7, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-07-30 10:00:24,017][mlogger.__print(mlogger.py:35)][10139][INFO]:July 30, 2020 - 02:00:23Django version 3.0.7, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:==MWC正在监听标准输入流==
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:==MWC正在监听标准输入流==
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:命令列表: 
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:命令列表: 
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:restart: 重启web服务器
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:restart: 重启web服务器
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:restart_: 重启MWC
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:restart_: 重启MWC
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:start: 启动web服务器
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:start: 启动web服务器
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:stop: 停止MWC
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:stop: 停止MWC
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:stop_: 停止web服务器并等待启动
+[2020-07-30 10:00:26,343][mlogger.__print(mlogger.py:35)][10139][INFO]:stop_: 停止web服务器并等待启动
+[2020-07-30 10:00:26,344][mlogger.__print(mlogger.py:35)][10139][INFO]:debug [True/False]开启/关闭debug模式
+[2020-07-30 10:00:26,344][mlogger.__print(mlogger.py:35)][10139][INFO]:debug [True/False]开启/关闭debug模式
+[2020-07-30 10:00:26,344][mlogger.__print(mlogger.py:35)][10139][INFO]:命令需以#m#开头, 例: #m#debug True
+[2020-07-30 10:00:26,344][mlogger.__print(mlogger.py:35)][10139][INFO]:命令需以#m#开头, 例: #m#debug True
+[2020-07-30 10:00:26,919][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:26] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:00:26,919][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:26] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:00:27,023][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:26] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:00:26] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:00:27,023][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:26] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:00:26] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:00:31,256][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:31] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:00:31,256][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:31] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:00:31,313][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:31] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:00:31] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:00:31] "GET /js/functions/display.js HTTP/1.1" 200 1495[30/Jul/2020 02:00:31] "GET /js/popper.min.js HTTP/1.1" 200 21004[30/Jul/2020 02:00:31] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[30/Jul/2020 02:00:31] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[30/Jul/2020 02:00:31] "GET /js/mwc.js HTTP/1.1" 200 578[30/Jul/2020 02:00:31] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[30/Jul/2020 02:00:31] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[0m
+[2020-07-30 10:00:31,313][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:31] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:00:31] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:00:31] "GET /js/functions/display.js HTTP/1.1" 200 1495[30/Jul/2020 02:00:31] "GET /js/popper.min.js HTTP/1.1" 200 21004[30/Jul/2020 02:00:31] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[30/Jul/2020 02:00:31] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[30/Jul/2020 02:00:31] "GET /js/mwc.js HTTP/1.1" 200 578[30/Jul/2020 02:00:31] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[30/Jul/2020 02:00:31] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[0m
+[2020-07-30 10:00:32,688][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:32] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:00:32,688][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:32] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:00:32,745][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:32] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:00:32,745][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:32] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:00:34,181][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:34] "GET /?awa=2 HTTP/1.1" 200 9624[30/Jul/2020 02:00:34] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:00:34,181][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:34] "GET /?awa=2 HTTP/1.1" 200 9624[30/Jul/2020 02:00:34] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:00:35,362][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:35] "GET /?awa=2 HTTP/1.1" 200 9624[30/Jul/2020 02:00:35] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:00:35] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:00:35] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
+[2020-07-30 10:00:35,362][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:35] "GET /?awa=2 HTTP/1.1" 200 9624[30/Jul/2020 02:00:35] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:00:35] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:00:35] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
+[2020-07-30 10:00:36,218][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:36] "GET /?awa=2 HTTP/1.1" 200 9624[30/Jul/2020 02:00:36] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:00:36,218][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:36] "GET /?awa=2 HTTP/1.1" 200 9624[30/Jul/2020 02:00:36] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:00:37,017][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:36] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:00:37,017][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:36] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:00:37,072][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:37] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:00:37] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:00:37] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
+[2020-07-30 10:00:37,072][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:00:37] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:00:37] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:00:37] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
+[2020-07-30 10:07:00,931][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:00] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:07:00,931][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:00] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:07:00,986][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:00] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:07:00] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:07:00,986][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:00] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:07:00] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:07:01,042][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:01] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[30/Jul/2020 02:07:01] "GET /js/popper.min.js HTTP/1.1" 200 21004[30/Jul/2020 02:07:01] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[30/Jul/2020 02:07:01] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[30/Jul/2020 02:07:01] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[30/Jul/2020 02:07:01] "GET /js/mwc.js HTTP/1.1" 200 578[30/Jul/2020 02:07:01] "GET /js/functions/display.js HTTP/1.1" 200 1495[0m
+[2020-07-30 10:07:01,042][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:01] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[30/Jul/2020 02:07:01] "GET /js/popper.min.js HTTP/1.1" 200 21004[30/Jul/2020 02:07:01] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[30/Jul/2020 02:07:01] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[30/Jul/2020 02:07:01] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[30/Jul/2020 02:07:01] "GET /js/mwc.js HTTP/1.1" 200 578[30/Jul/2020 02:07:01] "GET /js/functions/display.js HTTP/1.1" 200 1495[0m
+[2020-07-30 10:07:03,550][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:03] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:07:03,550][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:03] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:07:03,601][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:03] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:07:03,601][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:03] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:07:05,576][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:05] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:07:05,576][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:05] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:07:05,632][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:05] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:07:05,632][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:05] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:07:05,687][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:05] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:07:05] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
+[2020-07-30 10:07:05,687][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:05] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:07:05] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
+[2020-07-30 10:07:09,936][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:09] "GET /?awa=2 HTTP/1.1" 200 9624[30/Jul/2020 02:07:09] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:07:09,936][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:09] "GET /?awa=2 HTTP/1.1" 200 9624[30/Jul/2020 02:07:09] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:07:09,991][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:09] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:07:09,991][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:09] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:07:10,047][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:10] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[30/Jul/2020 02:07:10] "GET /js/popper.min.js HTTP/1.1" 200 21004[30/Jul/2020 02:07:10] "GET /js/mwc.js HTTP/1.1" 200 578[30/Jul/2020 02:07:10] "GET /js/functions/display.js HTTP/1.1" 200 1495[30/Jul/2020 02:07:10] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[30/Jul/2020 02:07:10] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[30/Jul/2020 02:07:10] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[30/Jul/2020 02:07:10] "GET /js/pages/login.js HTTP/1.1" 200 2645[30/Jul/2020 02:07:10] "GET /js/pages/shell.js HTTP/1.1" 200 2421[30/Jul/2020 02:07:10] "GET /js/functions/logger.js HTTP/1.1" 200 301[30/Jul/2020 02:07:10] "GET /js/functions/page_clock.js HTTP/1.1" 200 748[30/Jul/2020 02:07:10] "GET /js/pages/smanage.js HTTP/1.1" 200 30[30/Jul/2020 02:07:10] "GET /js/pages/main.js HTTP/1.1" 200 22[0m
+[2020-07-30 10:07:10,047][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:10] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[30/Jul/2020 02:07:10] "GET /js/popper.min.js HTTP/1.1" 200 21004[30/Jul/2020 02:07:10] "GET /js/mwc.js HTTP/1.1" 200 578[30/Jul/2020 02:07:10] "GET /js/functions/display.js HTTP/1.1" 200 1495[30/Jul/2020 02:07:10] "GET /js/bootstrap-4.3.1.js HTTP/1.1" 200 131637[30/Jul/2020 02:07:10] "GET /js/functions/loadpage.js HTTP/1.1" 200 396[30/Jul/2020 02:07:10] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[30/Jul/2020 02:07:10] "GET /js/pages/login.js HTTP/1.1" 200 2645[30/Jul/2020 02:07:10] "GET /js/pages/shell.js HTTP/1.1" 200 2421[30/Jul/2020 02:07:10] "GET /js/functions/logger.js HTTP/1.1" 200 301[30/Jul/2020 02:07:10] "GET /js/functions/page_clock.js HTTP/1.1" 200 748[30/Jul/2020 02:07:10] "GET /js/pages/smanage.js HTTP/1.1" 200 30[30/Jul/2020 02:07:10] "GET /js/pages/main.js HTTP/1.1" 200 22[0m
+[2020-07-30 10:07:14,287][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:14] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:07:14,287][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:14] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:07:14,341][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:14] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:07:14] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:07:14,341][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:14] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[30/Jul/2020 02:07:14] "GET /css/mwc.main.css HTTP/1.1" 200 4658[0m
+[2020-07-30 10:07:14,395][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:14] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[30/Jul/2020 02:07:14] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[30/Jul/2020 02:07:14] "GET /js/mwc.js HTTP/1.1" 200 578[0m
+[2020-07-30 10:07:14,395][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:14] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[30/Jul/2020 02:07:14] "GET /js/functions/check_browser.js HTTP/1.1" 200 237[30/Jul/2020 02:07:14] "GET /js/mwc.js HTTP/1.1" 200 578[0m
+[2020-07-30 10:07:16,058][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:16] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:07:16,058][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:16] "GET /?awa=2 HTTP/1.1" 200 9624[0m
+[2020-07-30 10:07:16,112][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:16] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:07:16] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:07:16,112][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:16] "GET /css/mwc.main.css HTTP/1.1" 200 4658[30/Jul/2020 02:07:16] "GET /css/bootstrap-4.3.1.css HTTP/1.1" 200 192348[0m
+[2020-07-30 10:07:16,169][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:16] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
+[2020-07-30 10:07:16,169][mlogger.__print(mlogger.py:35)][10139][INFO]:[1;33m[30/Jul/2020 02:07:16] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145[0m
+[2020-07-30 20:05:12,254][mlogger.__print(mlogger.py:35)][10139][INFO]:STOPPING
+[2020-07-30 20:05:12,254][mlogger.__print(mlogger.py:35)][10139][INFO]:STOPPING
+[2020-07-30 20:05:12,414][mlogger.__print(mlogger.py:35)][10139][INFO]:Stoped server, return code: 0
+[2020-07-30 20:05:12,414][mlogger.__print(mlogger.py:35)][10139][INFO]:Stoped server, return code: 0
+[2020-07-30 20:05:12,419][mlogger.__print(mlogger.py:35)][10139][INFO]:服务器状态: 服务器已自行停止/SERVER_stoped_by_ITSELF
+[2020-07-30 20:05:12,419][mlogger.__print(mlogger.py:35)][10139][INFO]:服务器状态: 服务器已自行停止/SERVER_stoped_by_ITSELF
+[2020-07-30 20:05:12,419][mlogger.__print(mlogger.py:35)][10139][INFO]:Thank you and goodBye! :)
+[2020-07-30 20:05:12,419][mlogger.__print(mlogger.py:35)][10139][INFO]:Thank you and goodBye! :)
+[2020-07-30 20:05:12,474][mlogger.__print(mlogger.py:35)][10139][INFO]:退出主程序
+[2020-07-30 20:05:12,474][mlogger.__print(mlogger.py:35)][10139][INFO]:退出主程序
+[2020-07-30 20:05:14,853][mlogger.__print(mlogger.py:35)][19734][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
+[2020-07-30 20:05:14,853][mlogger.__print(mlogger.py:35)][19734][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
+[2020-07-30 20:05:14,855][mlogger.__print(mlogger.py:35)][19734][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
+[2020-07-30 20:05:14,855][mlogger.__print(mlogger.py:35)][19734][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
+[2020-07-30 20:05:14,855][mlogger.__print(mlogger.py:35)][19734][INFO]:检查必要的数据表
+[2020-07-30 20:05:14,855][mlogger.__print(mlogger.py:35)][19734][INFO]:检查必要的数据表
+[2020-07-30 20:05:14,857][mlogger.__print(mlogger.py:35)][19734][INFO]:Server Running at PID:19739
+[2020-07-30 20:05:14,857][mlogger.__print(mlogger.py:35)][19734][INFO]:Server Running at PID:19739
+[2020-07-30 20:05:15,378][mlogger.__print(mlogger.py:35)][19734][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-07-30 20:05:15,378][mlogger.__print(mlogger.py:35)][19734][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-07-30 20:05:15,433][mlogger.__print(mlogger.py:35)][19734][INFO]:服务器启动/初始化成功/initialized
+[2020-07-30 20:05:15,433][mlogger.__print(mlogger.py:35)][19734][INFO]:服务器启动/初始化成功/initialized
+[2020-07-30 20:05:15,938][mlogger.__print(mlogger.py:35)][19734][INFO]:StartServerProcess
+[2020-07-30 20:05:15,938][mlogger.__print(mlogger.py:35)][19734][INFO]:StartServerProcess
+[2020-07-30 20:05:15,941][mlogger.__print(mlogger.py:35)][19734][INFO]:Server Running at PID:19742
+[2020-07-30 20:05:15,941][mlogger.__print(mlogger.py:35)][19734][INFO]:Server Running at PID:19742
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]:    __  ____      _____/\
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]:    __  ____      _____/\
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]:   /  |/  / | /| / / ___/
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]:   /  |/  / | /| / / ___/
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]:  / /|_/ /| |/ |/ / /__  
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]:  / /|_/ /| |/ |/ / /__  
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]: / /  /_/ |__/|__/\___/
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]: / /  /_/ |__/|__/\___/
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]: \/
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]: \/
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]:==== MCDRWEBCONSOLE ====
+[2020-07-30 20:05:15,943][mlogger.__print(mlogger.py:35)][19734][INFO]:==== MCDRWEBCONSOLE ====
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:上报BUG请联系 ixiaohei:
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:上报BUG请联系 ixiaohei:
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:QQ: 486118772
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:QQ: 486118772
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-07-30 20:05:16,448][mlogger.__print(mlogger.py:35)][19734][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-07-30 20:05:16,449][mlogger.__print(mlogger.py:35)][19734][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-07-30 20:05:16,449][mlogger.__print(mlogger.py:35)][19734][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-07-30 20:05:16,627][mlogger.__print(mlogger.py:35)][19734][INFO]:Performing system checks...System check identified no issues (0 silenced).
+[2020-07-30 20:05:16,627][mlogger.__print(mlogger.py:35)][19734][INFO]:Performing system checks...System check identified no issues (0 silenced).
+[2020-07-30 20:05:16,683][mlogger.__print(mlogger.py:35)][19734][INFO]:July 30, 2020 - 12:05:16Django version 3.0.7, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-07-30 20:05:16,683][mlogger.__print(mlogger.py:35)][19734][INFO]:July 30, 2020 - 12:05:16Django version 3.0.7, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-07-30 20:05:18,947][mlogger.__print(mlogger.py:35)][19734][INFO]:==MWC正在监听标准输入流==
+[2020-07-30 20:05:18,947][mlogger.__print(mlogger.py:35)][19734][INFO]:==MWC正在监听标准输入流==
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:命令列表: 
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:命令列表: 
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:restart: 重启web服务器
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:restart: 重启web服务器
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:restart_: 重启MWC
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:restart_: 重启MWC
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:start: 启动web服务器
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:start: 启动web服务器
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:stop: 停止MWC
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:stop: 停止MWC
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:stop_: 停止web服务器并等待启动
+[2020-07-30 20:05:18,948][mlogger.__print(mlogger.py:35)][19734][INFO]:stop_: 停止web服务器并等待启动
+[2020-07-30 20:05:18,949][mlogger.__print(mlogger.py:35)][19734][INFO]:debug [True/False]开启/关闭debug模式
+[2020-07-30 20:05:18,949][mlogger.__print(mlogger.py:35)][19734][INFO]:debug [True/False]开启/关闭debug模式
+[2020-07-30 20:05:18,949][mlogger.__print(mlogger.py:35)][19734][INFO]:命令需以#m#开头, 例: #m#debug True
+[2020-07-30 20:05:18,949][mlogger.__print(mlogger.py:35)][19734][INFO]:命令需以#m#开头, 例: #m#debug True

@@ -1,0 +1,37 @@
+[2020-07-30 09:59:18,950][mlogger.__print(mlogger.py:35)][10098][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
+[2020-07-30 09:59:18,954][mlogger.__print(mlogger.py:35)][10098][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
+[2020-07-30 09:59:18,954][mlogger.__print(mlogger.py:35)][10098][INFO]:检查必要的数据表
+[2020-07-30 09:59:18,956][mlogger.__print(mlogger.py:35)][10098][INFO]:Server Running at PID:10106
+[2020-07-30 09:59:19,421][mlogger.__print(mlogger.py:35)][10098][INFO]:Operations to perform:  Apply all migrations: admin, auth, contenttypes, sessionsRunning migrations:  No migrations to apply.
+[2020-07-30 09:59:19,523][mlogger.__print(mlogger.py:35)][10098][INFO]:服务器启动/初始化成功/initialized
+[2020-07-30 09:59:20,027][mlogger.__print(mlogger.py:35)][10098][INFO]:StartServerProcess
+[2020-07-30 09:59:20,031][mlogger.__print(mlogger.py:35)][10098][INFO]:Server Running at PID:10107
+[2020-07-30 09:59:20,033][mlogger.__print(mlogger.py:35)][10098][INFO]:    __  ____      _____/\
+[2020-07-30 09:59:20,033][mlogger.__print(mlogger.py:35)][10098][INFO]:   /  |/  / | /| / / ___/
+[2020-07-30 09:59:20,033][mlogger.__print(mlogger.py:35)][10098][INFO]:  / /|_/ /| |/ |/ / /__  
+[2020-07-30 09:59:20,033][mlogger.__print(mlogger.py:35)][10098][INFO]: / /  /_/ |__/|__/\___/
+[2020-07-30 09:59:20,034][mlogger.__print(mlogger.py:35)][10098][INFO]: \/
+[2020-07-30 09:59:20,034][mlogger.__print(mlogger.py:35)][10098][INFO]:==== MCDRWEBCONSOLE ====
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:上报BUG请联系 ixiaohei:
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:QQ: 486118772
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-07-30 09:59:20,535][mlogger.__print(mlogger.py:35)][10098][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-07-30 09:59:20,651][mlogger.__print(mlogger.py:35)][10098][INFO]:Performing system checks...
+[2020-07-30 09:59:20,705][mlogger.__print(mlogger.py:35)][10098][INFO]:System check identified no issues (0 silenced).July 30, 2020 - 01:59:20Django version 3.0.7, using settings 'MwebConsole.settings'Starting development server at http://0:8000/Quit the server with CONTROL-C.
+[2020-07-30 09:59:23,035][mlogger.__print(mlogger.py:35)][10098][INFO]:==MWC正在监听标准输入流==
+[2020-07-30 09:59:23,035][mlogger.__print(mlogger.py:35)][10098][INFO]:命令列表: 
+[2020-07-30 09:59:23,035][mlogger.__print(mlogger.py:35)][10098][INFO]:restart: 重启web服务器
+[2020-07-30 09:59:23,035][mlogger.__print(mlogger.py:35)][10098][INFO]:restart_: 重启MWC
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:start: 启动web服务器
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:stop: 停止MWC
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:stop_: 停止web服务器并等待启动
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:debug [True/False]开启/关闭debug模式
+[2020-07-30 09:59:23,036][mlogger.__print(mlogger.py:35)][10098][INFO]:命令需以#m#开头, 例: #m#debug True
+[2020-07-30 09:59:43,832][mlogger.__print(mlogger.py:35)][10098][INFO]:STOPPING
+[2020-07-30 09:59:43,886][mlogger.__print(mlogger.py:35)][10098][INFO]:Stoped server, return code: 0
+[2020-07-30 09:59:43,887][mlogger.__print(mlogger.py:35)][10098][INFO]:服务器状态: 服务器已自行停止/SERVER_stoped_by_ITSELF
+[2020-07-30 09:59:43,887][mlogger.__print(mlogger.py:35)][10098][INFO]:Thank you and goodBye! :)
+[2020-07-30 09:59:43,939][mlogger.__print(mlogger.py:35)][10098][INFO]:退出主程序

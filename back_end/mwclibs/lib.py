@@ -293,7 +293,7 @@ class ProcessMonitor():
     def monitor(self: classmethod):
         self.process_i.Mlogger.logger(0, 'Monitor Started')
         while self.process_i.server.poll() is None:
-            self.process_i.Mlogger.logger(0, self.process_i.recv())
+            self.process_i.Mlogger.logger(0, self.process_i.stdout_recv())
         self.process_i.Mlogger.logger(0, 'Monitor Stoped')
         return
 

@@ -2,6 +2,7 @@ import sys
 import traceback
 from .constants import *
 import json
+import time
 
 
 def log_call(func):
@@ -40,28 +41,27 @@ class server:
         stderr = sys.stderr
 
 
-@log_call
-def setdebug(debugMode: bool, tmp=True):
-    print(f"调试模式: {debugMode}")
-    if type(debugMode) is not bool:
-        raise TypeError("DEBUG MODE IS A BOOL")
-    else:
-        with open(os.path.join(tmp_dir_path, "debug"), "w") as f:
-            if tmp is False:
-                tmp = read_config()
-                tmp["DEBUG"] = debugMode
-                write_config(tmp)
-            return f.write(str(debugMode))
-
-
 def getdebug():
-    with open(os.path.join(tmp_dir_path, "debug"), "r") as f:
+    with open(tmp_debug_file_path, "r") as f:
         if f.read() == "True":
             return True
         elif f.read() == "False":
             return False
         else:
             return None
+
+
+def setdebug(debugMode: bool, tmp=True):
+    print(f"调试模式: {debugMode}")
+    if type(debugMode) is not bool:
+        raise TypeError("DEBUG MODE IS A BOOL")
+    else:
+        with open(tmp_debug_file_path, "w") as f:
+            if tmp is False:
+                tmp = read_config()
+                tmp["DEBUG"] = debugMode
+                write_config(tmp)
+            return f.write(str(debugMode))
 
 
 @log_call
@@ -110,6 +110,52 @@ def write_config(config):
         raise Exception
 
 
+@log_call
+def dejson(msg: str):
+    buff = None
+    try:
+        buff = json.loads(msg)
+    except Exception as exc:
+        print(f"错误: {exc}")
+        return
+    try:
+        if type(buff) == str:
+            raise TypeError
+    except TypeError:
+        try:
+            buff = json.loads(buff)
+        except Exception as exc:
+            print(f"错误: {exc}")
+            return
+
+    class _return:
+        msgtype = buff['type']
+        msg = buff[buff['type']]
+        time = buff['time']
+        full = buff
+
+    return _return
+
+
+@log_call
+def enjson(_type: str, value: str, b=False):
+    tmp = {'type': _type, _type: value, 'time': time.time()}
+    class _return:
+        JSON = None
+        time = None
+        pass
+    if b:
+        tmp = _return
+        tmp.JSON = bytes(json.dumps(tmp), encoding='UTF-8')
+        tmp.time = time.time()
+        return tmp
+    if not b:
+        tmp = _return
+        tmp.JSON = json.dumps(tmp)
+        tmp.time = time.time()
+        return tmp
+
+
 try:
     os.remove(tmp_dir_path)
 except:
@@ -119,7 +165,13 @@ try:
 except:
     pass
 
+setdebug(False, tmp=True)
+try:
+    getdebug()
+except FileNotFoundError:
+    setdebug(False, tmp=True)
+
 try:
     setdebug(read_config()["DEBUG"])
-except:
-    setdebug(True)
+except FileNotFoundError:
+    setdebug(True, tmp=True)

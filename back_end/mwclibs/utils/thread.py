@@ -1,5 +1,6 @@
 import ctypes
 import inspect
+import threading
 
 
 class MWConsoleExit(SystemExit):
@@ -26,3 +27,7 @@ def stop_thread(thread, exception=MWConsoleExit):
         return False
     else:
         return True
+
+
+def new(func, daemon=True):
+    return threading.Thread(func, daemon=daemon)
