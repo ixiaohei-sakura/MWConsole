@@ -1,7 +1,14 @@
 import socket
-import threading
 from .server_status import *
 from .thread import *
+try:
+    from .socketfunchandle.socfunctions import funcs_socall
+except ImportError:
+    from .socketfunchandle.socfunctions import funcs_socall
+try:
+    from .server import Server_Control
+except ImportError:
+    pass
 
 """加密解密.......草"""
 
@@ -35,24 +42,6 @@ class socket_info:
         self.full_data = full_data
 
 
-class funcs_socall:
-    def __init__(self):
-        self.funcs_list = []
-        self.__add_func_to_run(self.rcmd_stop)
-
-    def __add_func_to_run(self, func):
-        def func_(info, soc_server):
-            t = threading.Thread(target=func, args=[info, soc_server], daemon=True)
-            t.start()
-            return t
-
-        self.funcs_list.append(func_)
-
-    def rcmd_stop(self, info: socket_info, soc_server):
-        if info.command == "":
-            pass
-
-
 class TimeStampErr(SystemError):
     pass
 
@@ -67,11 +56,32 @@ def close(sfd: socket.socket):
 
 class Socket_handle:
     def __init__(self, Mlogger, process):
+        self.close_conn = close
         self.id_conn_pool = None
         self.Mlogger = Mlogger
         self.process_ = process
+        self.MainThread = self.process_.server
         self._load()
         self.init()
+
+    def send(self, type_: str, data: str, client: socket.socket):
+        """
+        向客户端发送json信息
+        :param type_: 数据类型
+        :param data: 元数据
+        :param client: client描述变量
+        :return: {True/False} 成功/不成功
+        """
+        if type(type_) != str or type(data) != str:
+            self.Mlogger.logger(1, "错误，send函数传入了错误的参数。Socket")
+            return False
+        try:
+            client.sendall(enjson(type_, data, b=True).JSON)
+        except Exception as exc:
+            self.Mlogger.logger(1, f"错误，在套接字处理「{exc}」")
+            return False
+        return True
+
 
     def _load(self):
         self.num_online_client = 0
@@ -199,44 +209,7 @@ class Socket_handle:
 
             info.set_data(tmp.full)
             for functions in run.funcs_list:
-                functions(info, server_)
-
-            # if tmp.msgtype == 'ping' and tmp.msg == 'ping':
-            #     client.sendall('pong'.encode('UTF-8'))
-            # ##
-            # elif tmp.msgtype == 'msg':
-            #     self.Mlogger.logger(0, tmp.msg, name='ClientSend')
-            # ##
-            # elif tmp.msgtype == 'django_info':
-            #     self.Mlogger.logger(0, tmp.msg, name='HTTPINFO')
-            # ##
-            # elif tmp.msgtype == 'cmd':
-            #     if tmp.msg == 'stop':
-            #         if self.process_.server.stop:
-            #             self.Mlogger.logger(0, 'SocketServer会自动停止', name='SocketServer')
-            #             value: socket.socket
-            #             try:
-            #                 client.sendall(enjson('cmd_return', '成功停止服务器'))
-            #             except:
-            #                 pass
-            #             for value in self.s_conn_pool:
-            #                 try:
-            #                     value.shutdown(2)
-            #                     value.close()
-            #                 except:
-            #                     pass
-            #             self.process_.server.restart_flag = True
-            #         else:
-            #             client.sendall(enjson('cmd_return', '未能成功停止服务器'))
-            #     ##
-            #     elif tmp.msg == 'reload':
-            #         if self.process_.server.restart:
-            #             client.sendall(enjson('cmd_return', '成功重载服务器'))
-            #         else:
-            #             client.sendall(enjson('cmd_return', '未能成功重载服务器'))
-            #     ##
-            #     else:
-            #         client.sendall(enjson('cmd_return', '参数错误'))
+                functions(info, server_, client, ID)
 
     def send_to_all(self, msg: str, _type='msg'):
         for value in self.s_conn_pool:

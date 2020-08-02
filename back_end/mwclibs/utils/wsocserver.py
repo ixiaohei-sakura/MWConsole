@@ -1,6 +1,4 @@
-import json
 import asyncio
-import threading
 import websockets
 from .thread import *
 from .server_status import *

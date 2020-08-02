@@ -1,0 +1,5 @@
+[2020-08-01 12:36:01,186][mlogger.__print(mlogger.py:35)][19734][INFO]:STOPPING
+[2020-08-01 12:36:01,299][mlogger.__print(mlogger.py:35)][19734][INFO]:Stoped server, return code: 0
+[2020-08-01 12:36:01,303][mlogger.__print(mlogger.py:35)][19734][INFO]:服务器状态: 服务器已自行停止/SERVER_stoped_by_ITSELF
+[2020-08-01 12:36:01,303][mlogger.__print(mlogger.py:35)][19734][INFO]:Thank you and goodBye! :)
+[2020-08-01 12:36:01,354][mlogger.__print(mlogger.py:35)][19734][INFO]:退出主程序

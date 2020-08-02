@@ -1,7 +1,5 @@
 import fcntl
 import select
-import time
-import threading
 from .thread import *
 from subprocess import Popen, PIPE
 from .server_status import *
