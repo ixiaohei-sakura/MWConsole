@@ -9,15 +9,8 @@ try:
     from .checkupdate import *
     from .server_status import *
     from .lang.init_lang import *
-except ImportError:
-    from mwclibs.utils.constants import *
-    from mwclibs.utils.mlogger import *
-    from mwclibs.utils.fespc import *
-    from mwclibs.utils.socserver import *
-    from mwclibs.utils.wsocserver import *
-    from mwclibs.utils.checkupdate import *
-    from mwclibs.utils.server_status import *
-    from mwclibs.utils.lang.init_lang import *
+except ImportError as exc:
+    raise ModuleNotFoundError(str(exc))
 
 
 class Server_Control:
@@ -71,22 +64,27 @@ class Server_Control:
         threading.Thread(target=self.__console_input__, daemon=True).start()
         self.__print_messag__()
         self.server.join()
-        while True:
-            # 接下来进入服务器状态判断循环
-            if self.server.server_status == ServerStatus.STOPED_by_func_call:
-                # 当服务器是被函数调用所停止的，那么接着循环
+        # 接下来进入服务器状态判断循环
+        try:
+            while True:
+                if self.server.server_status == ServerStatus.STOPED_by_func_call:
+                    time.sleep(server.tick)  # 当服务器是被函数调用所停止的，那么接着循环
+                if self.server.server_status == ServerStatus.ISRESTARTING:
+                    self.server.start()  # 当服务器是被函数调用重启
+                if self.server.server_status == ServerStatus.STOPED_by_it_self:
+                    time.sleep(server.tick)  # 当服务器被用户停止或出现错误时，退出循环，退出主程序.
+                    self.Mlogger.logger(0, "退出主循环/EXIT MAIN LOOP")
+                    self.stop_and_exit = True
+                    break
+                self.server.join()
                 time.sleep(server.tick)
-            if self.server.server_status == ServerStatus.ISRESTARTING:
-                # 当服务器是被函数调用重启
-                self.server.start()
-            if self.server.server_status == ServerStatus.STOPED_by_it_self:
-                # 当服务器被用户停止或出现错误时，退出循环，退出主程序.
-                time.sleep(server.tick)
-                self.Mlogger.logger(0, "退出主程序")
-                self.stop_and_exit = True
-                break
-            self.server.join()
-            time.sleep(server.tick)
+        except Exception as exc:
+            self.Mlogger.logger(2, "在停止循环是出现了错误，一般出现此错误，是因为django没有安装。但在此前，django应该已经自动安装。"
+                                   "如果您再次启动程序->停止程序后还会出现此错误，请手动安装django或尝试更换python版本。如果依然报错，"
+                                   "请联系我。https://github.com/ixiaohei-sakura/MWConsole")
+            exc = str(exc)
+            self.Mlogger.logger(2, exc)
+            self.stop_and_exit = True
         if self.stop_and_exit is True:
             return [self.server.server_status, self.server.process.poll()]
         else:
@@ -140,7 +138,9 @@ class Server_Control:
     @log_call
     def __check_database__(self):
         self.Mlogger.logger(0, '检查必要的数据表', name='ServerCheck')
-        self.__process = FrontEndServerProcessControl(self.Mlogger, '{0} manage.py migrate'.format(read_config()["PYCMD"]), Monitor=True, ensoc=False)
+        self.__process = FrontEndServerProcessControl(self.Mlogger,
+                                                      '{0} manage.py migrate'.format(read_config()["PYCMD"]),
+                                                      Monitor=True, ensoc=False)
         self.__process.join()
 
     @log_call
@@ -188,10 +188,14 @@ class Server_Control:
                     except Exception as exc:
                         print("GET A exeception: ", str(exc))
                         continue
-                elif buff.find("rm") >= 0 or buff.find("dd") >= 0:
-                    pass
                 else:
-                    os.system(buff)
+                    buff = buff.split(" ")
+                    if buff[0] == "socket":
+                        try:
+                            tmp = buff
+                            self.soc_handle.console_command_process(tmp)
+                        except:
+                            pass
             time.sleep(server.tick)
 
     @log_call
@@ -410,8 +414,8 @@ class Server_Control:
 def main():
     try:
         for i in range(10):
-            print("初始化服务器/initializing server", "."*i, end="\r")
-            time.sleep(server.tick*4)
+            print("初始化服务器/initializing server", "." * i, end="\r")
+            time.sleep(server.tick * 4)
         process = Server_Control(sys.argv)
     except:
         import traceback

@@ -1,18 +1,16 @@
 import os
 import sys
 import threading
-import time
+import pip
 
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'MwebConsole.settings')
     try:
         from django.core.management import execute_from_command_line
-    except ImportError as exc:
-        raise ImportError(
-            "Couldn't import Django. Are you sure it's installed and "
-            "available on your PYTHONPATH environment variable? Did you "
-            "forget to activate a virtual environment?")from exc
+    except:
+        pip._internal.main(['install', 'django'])
+        print("重要!Django未安装，现在已经自动安装。请重启程序!")
     execute_from_command_line(sys.argv)
 
 

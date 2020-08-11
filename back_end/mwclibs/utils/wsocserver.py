@@ -3,6 +3,7 @@ import websockets
 from .thread import *
 from .server_status import *
 
+
 class WSocket_handle:
     def __init__(self, Mlogger, process):
         self.Mlogger = Mlogger

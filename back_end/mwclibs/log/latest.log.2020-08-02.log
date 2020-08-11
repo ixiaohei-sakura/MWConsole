@@ -1,0 +1,29 @@
+[2020-08-11 09:37:40,067][mlogger.__print(mlogger.py:35)][10011][INFO]:WSocketServer已启动, 等待网页端上线, 监听地址为 127.0.0.1:3548
+[2020-08-11 09:37:40,073][mlogger.__print(mlogger.py:35)][10011][INFO]:SocketServer已启动, 等待客户端连接, 监听地址为 127.0.0.1:3547
+[2020-08-11 09:37:40,074][mlogger.__print(mlogger.py:35)][10011][INFO]:检查必要的数据表
+[2020-08-11 09:37:40,076][mlogger.__print(mlogger.py:35)][10011][INFO]:Server Running at PID:10015
+[2020-08-11 09:37:40,167][mlogger.__print(mlogger.py:35)][10011][INFO]:服务器启动/初始化成功/initialized
+[2020-08-11 09:37:40,669][mlogger.__print(mlogger.py:35)][10011][INFO]:StartServerProcess
+[2020-08-11 09:37:40,672][mlogger.__print(mlogger.py:35)][10011][INFO]:Server Running at PID:10018
+[2020-08-11 09:37:40,674][mlogger.__print(mlogger.py:35)][10011][INFO]:    __  ____      _____/\
+[2020-08-11 09:37:40,674][mlogger.__print(mlogger.py:35)][10011][INFO]:   /  |/  / | /| / / ___/
+[2020-08-11 09:37:40,674][mlogger.__print(mlogger.py:35)][10011][INFO]:  / /|_/ /| |/ |/ / /__  
+[2020-08-11 09:37:40,675][mlogger.__print(mlogger.py:35)][10011][INFO]: / /  /_/ |__/|__/\___/
+[2020-08-11 09:37:40,675][mlogger.__print(mlogger.py:35)][10011][INFO]: \/
+[2020-08-11 09:37:40,675][mlogger.__print(mlogger.py:35)][10011][INFO]:==== MCDRWEBCONSOLE ====
+[2020-08-11 09:37:41,178][mlogger.__print(mlogger.py:35)][10011][INFO]:正在启动MCDR-WEBCONSOLE
+[2020-08-11 09:37:41,179][mlogger.__print(mlogger.py:35)][10011][INFO]:上报BUG请联系 ixiaohei:
+[2020-08-11 09:37:41,179][mlogger.__print(mlogger.py:35)][10011][INFO]:QQ: 486118772
+[2020-08-11 09:37:41,179][mlogger.__print(mlogger.py:35)][10011][INFO]:mwc-httpserver is OpenSource, find it here:
+[2020-08-11 09:37:41,179][mlogger.__print(mlogger.py:35)][10011][INFO]:GAYHUB: https://github.com/ixiaohei-sakura/
+[2020-08-11 09:37:41,180][mlogger.__print(mlogger.py:35)][10011][INFO]:G-PROJECT: https://github.com/ixiaohei-sakura/MWConsole
+[2020-08-11 09:37:41,180][mlogger.__print(mlogger.py:35)][10011][INFO]:ServerStarted. Quit the server with CONTROL-C
+[2020-08-11 09:37:43,678][mlogger.__print(mlogger.py:35)][10011][INFO]:==MWC正在监听标准输入流==
+[2020-08-11 09:37:43,679][mlogger.__print(mlogger.py:35)][10011][INFO]:命令列表: 
+[2020-08-11 09:37:43,679][mlogger.__print(mlogger.py:35)][10011][INFO]:restart: 重启web服务器
+[2020-08-11 09:37:43,679][mlogger.__print(mlogger.py:35)][10011][INFO]:restart_: 重启MWC
+[2020-08-11 09:37:43,679][mlogger.__print(mlogger.py:35)][10011][INFO]:start: 启动web服务器
+[2020-08-11 09:37:43,680][mlogger.__print(mlogger.py:35)][10011][INFO]:stop: 停止MWC
+[2020-08-11 09:37:43,680][mlogger.__print(mlogger.py:35)][10011][INFO]:stop_: 停止web服务器并等待启动
+[2020-08-11 09:37:43,680][mlogger.__print(mlogger.py:35)][10011][INFO]:debug [True/False]开启/关闭debug模式
+[2020-08-11 09:37:43,680][mlogger.__print(mlogger.py:35)][10011][INFO]:命令需以#m#开头, 例: #m#debug True

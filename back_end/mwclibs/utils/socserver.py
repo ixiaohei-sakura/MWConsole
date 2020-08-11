@@ -1,4 +1,8 @@
 import socket
+from hashlib import md5
+from json import dumps
+from os import path
+
 from .server_status import *
 from .thread import *
 try:
@@ -9,6 +13,13 @@ try:
     from .server import Server_Control
 except ImportError:
     pass
+
+
+def CheckSocketPermissionFile():
+    if not path.isfile("./config/socket_user.json"):
+        with open("./config/socket_user.json", "w") as fd:
+            fd.write(dumps({}))
+
 
 """加密解密.......草"""
 
@@ -50,12 +61,13 @@ def close(sfd: socket.socket):
     try:
         sfd.shutdown(2)
         sfd.close()
-    except:
-        pass
+    except Exception as exc:
+        return exc
 
 
 class Socket_handle:
     def __init__(self, Mlogger, process):
+        CheckSocketPermissionFile()
         self.close_conn = close
         self.id_conn_pool = None
         self.Mlogger = Mlogger
@@ -63,6 +75,20 @@ class Socket_handle:
         self.MainThread = self.process_.server
         self._load()
         self.init()
+
+    def console_command_process(self, child_command: list):
+        if child_command[1] == "addusr":
+            self.Mlogger.logger(3, "Socket新建用户-请输入用户名> ")
+            usrname = input("  -usrnameinput>>> ")
+            self.Mlogger.logger(3, f"新建用户名：{usrname}")
+            self.Mlogger.logger(3, "Socket新建用户-请输入密码> ")
+            psw = input("  -pswinput>>> ")
+            self.Mlogger.logger(3, f"新建密码：{psw}")
+            hl = md5()
+            hl.update(bytes(psw, encoding='utf-8'))
+            psw = hl.hexdigest()
+            self.Mlogger.logger(3, "请选择权限： 0-访客客户端，无任何权限。只能发送消息；1-正常客户端，部分插件权限；2-manager, 一些插件权限; 3-admin, 全部权限(开/关客户端服务器)输入编号")
+            permission = int(input("  -permissioninput>>> "))
 
     def send(self, type_: str, data: str, client: socket.socket):
         """
@@ -81,7 +107,6 @@ class Socket_handle:
             self.Mlogger.logger(1, f"错误，在套接字处理「{exc}」")
             return False
         return True
-
 
     def _load(self):
         self.num_online_client = 0
