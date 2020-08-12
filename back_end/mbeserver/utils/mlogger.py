@@ -57,7 +57,7 @@ class MLogger:
                 self.__print(___, level, now_time, name, end)
         else:
             print("传入的参数的类型: ", type(data))
-            raise TypeError("Mlogger记录器被传入了错误的参数，如果您不知道这是什么意思，请提交错误追溯。如果您是开发者并且正在改动MWC，请仔细检查您写的代码")
+            raise TypeError("记录器被传入了错误的参数，如果您不知道这是什么意思，请提交错误追溯。如果您是开发者并且正在改动MWC，请仔细检查您写的代码")
 
     @property
     def get_logger_(self):

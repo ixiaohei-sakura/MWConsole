@@ -147,7 +147,6 @@ class Server_Control:
     def __console_input__(self):
         time.sleep(3)
         self.Mlogger.logger(0, "==MWC正在监听标准输入流==")
-        self.Mlogger.logger(3, "DEBUG模式已打开，MWC终端自动启动DEBUG模式")
         self.Mlogger.logger(0, "命令列表: ")
         self.Mlogger.logger(0, "restart: 重启web服务器")
         self.Mlogger.logger(0, "restart_: 重启MWC")
@@ -156,6 +155,7 @@ class Server_Control:
         self.Mlogger.logger(0, "stop_: 停止web服务器并等待启动")
         self.Mlogger.logger(0, "debug [True/False]开启/关闭debug模式")
         self.Mlogger.logger(0, "命令需以#m#开头, 例: #m#debug True")
+
         while True:
             buff = input()
             if buff[0:3] == "#m#":
